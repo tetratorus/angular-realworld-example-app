@@ -139,6 +139,12 @@ Functional observations (PASS):
 
 ## Deviations
 
+## Status after integration (parent session, full suite run 2026-11-12 17:31Z)
+
+Resolved. In the full parity run on the integration branch, with every package merged, all journeys for this screen pass every check (see `evidence/parity-results.md`). The notes below are what the child session recorded on its own branch, before the packages it depended on were merged. They are kept as the audit trail.
+
+---
+
 No failing checks. Notes:
 
 - **Signed-out journey has no screenshot.** It ends on `/login`, which is still a stub in React (work package `auth`), so it observes the URL and the absence of the editor only.

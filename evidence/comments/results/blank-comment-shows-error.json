@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "blank comment shows error",
   "journeyId": "blank-comment-shows-error",
-  "ranAt": "2026-11-12T17:21:13.143Z",
+  "ranAt": "2026-11-12T17:32:28.600Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

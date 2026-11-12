@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "go to page 2",
   "journeyId": "go-to-page-2",
-  "ranAt": "2026-11-12T17:20:01.927Z",
+  "ranAt": "2026-11-12T17:33:05.203Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

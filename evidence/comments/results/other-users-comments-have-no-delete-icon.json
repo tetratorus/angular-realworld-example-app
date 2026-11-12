@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "other users comments have no delete icon",
   "journeyId": "other-users-comments-have-no-delete-icon",
-  "ranAt": "2026-11-12T17:21:21.037Z",
+  "ranAt": "2026-11-12T17:32:36.610Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "global feed signed out",
   "journeyId": "global-feed-signed-out",
-  "ranAt": "2026-11-12T17:19:57.372Z",
+  "ranAt": "2026-11-12T17:33:00.311Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

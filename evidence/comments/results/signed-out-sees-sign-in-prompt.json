@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "signed out sees sign-in prompt",
   "journeyId": "signed-out-sees-sign-in-prompt",
-  "ranAt": "2026-11-12T17:21:02.969Z",
+  "ranAt": "2026-11-12T17:32:18.576Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

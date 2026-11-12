@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "signed-out your feed url redirects to login",
   "journeyId": "signed-out-your-feed-url-redirects-to-login",
-  "ranAt": "2026-11-12T17:20:16.944Z",
+  "ranAt": "2026-11-12T17:33:20.876Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

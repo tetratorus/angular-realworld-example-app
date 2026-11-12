@@ -2,7 +2,7 @@
   "screen": "auth",
   "journey": "register with taken username",
   "journeyId": "register-with-taken-username",
-  "ranAt": "2026-11-12T17:20:54.985Z",
+  "ranAt": "2026-11-12T17:32:05.084Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

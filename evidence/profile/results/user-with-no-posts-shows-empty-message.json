@@ -2,7 +2,7 @@
   "screen": "profile",
   "journey": "user with no posts shows empty message",
   "journeyId": "user-with-no-posts-shows-empty-message",
-  "ranAt": "2026-11-12T17:19:56.277Z",
+  "ranAt": "2026-11-12T17:33:38.966Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -2,7 +2,7 @@
   "screen": "editor",
   "journey": "blank title shows error",
   "journeyId": "blank-title-shows-error",
-  "ranAt": "2026-11-12T17:23:04.062Z",
+  "ranAt": "2026-11-12T17:32:47.260Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

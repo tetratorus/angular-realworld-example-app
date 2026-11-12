@@ -2,7 +2,7 @@
   "screen": "profile",
   "journey": "own profile shows Edit Profile Settings",
   "journeyId": "own-profile-shows-edit-profile-settings",
-  "ranAt": "2026-11-12T17:19:53.261Z",
+  "ranAt": "2026-11-12T17:33:35.951Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

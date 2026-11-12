@@ -2,7 +2,7 @@
   "screen": "article",
   "journey": "own article shows edit and delete",
   "journeyId": "own-article-shows-edit-and-delete",
-  "ranAt": "2026-11-12T17:21:07.049Z",
+  "ranAt": "2026-11-12T17:31:44.449Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

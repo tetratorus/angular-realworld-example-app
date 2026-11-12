@@ -2,7 +2,7 @@
   "screen": "profile",
   "journey": "follow then unfollow alice as demo",
   "journeyId": "follow-then-unfollow-alice-as-demo",
-  "ranAt": "2026-11-12T17:19:50.155Z",
+  "ranAt": "2026-11-12T17:33:32.831Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -2,7 +2,7 @@
   "screen": "profile",
   "journey": "view alice's profile signed out",
   "journeyId": "view-alice-s-profile-signed-out",
-  "ranAt": "2026-11-12T17:19:41.102Z",
+  "ranAt": "2026-11-12T17:33:24.060Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

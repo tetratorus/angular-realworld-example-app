@@ -2,7 +2,7 @@
   "screen": "auth",
   "journey": "register a new user",
   "journeyId": "register-a-new-user",
-  "ranAt": "2026-11-12T17:20:51.036Z",
+  "ranAt": "2026-11-12T17:32:01.090Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

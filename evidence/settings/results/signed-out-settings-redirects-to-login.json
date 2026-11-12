@@ -2,7 +2,7 @@
   "screen": "settings",
   "journey": "signed-out settings redirects to login",
   "journeyId": "signed-out-settings-redirects-to-login",
-  "ranAt": "2026-11-12T17:21:32.689Z",
+  "ranAt": "2026-11-12T17:34:03.857Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

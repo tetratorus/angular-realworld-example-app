@@ -1,3 +1,9 @@
+## Status after integration (parent session, full suite run 2026-11-12 17:31Z)
+
+Resolved. In the full parity run on the integration branch, with every package merged, all journeys for this screen pass every check (see `evidence/parity-results.md`). The notes below are what the child session recorded on its own branch, before the packages it depended on were merged. They are kept as the audit trail.
+
+---
+
 Two journeys fail only the **API calls + payloads** check, and only because of calls made by the screen the journey lands on, which belongs to another work package and is still a "not migrated" stub on the base branch. Every call made by the Settings screen itself matches exactly (`GET /user`, then `PUT /user` with the same payload and key order), and screenshots, observations and backend data match in all 6 journeys.
 
 | Journey                           | Extra calls on Angular only                                            | Made by                        | Owner      |

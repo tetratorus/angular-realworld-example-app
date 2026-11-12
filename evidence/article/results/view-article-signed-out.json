@@ -2,7 +2,7 @@
   "screen": "article",
   "journey": "view article signed out",
   "journeyId": "view-article-signed-out",
-  "ranAt": "2026-11-12T17:20:55.846Z",
+  "ranAt": "2026-11-12T17:31:33.013Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

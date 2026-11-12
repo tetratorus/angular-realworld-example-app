@@ -2,7 +2,7 @@
   "screen": "auth",
   "journey": "malformed email is rejected in the browser",
   "journeyId": "malformed-email-is-rejected-in-the-browser",
-  "ranAt": "2026-11-12T17:21:02.242Z",
+  "ranAt": "2026-11-12T17:32:12.220Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "click a sidebar tag",
   "journeyId": "click-a-sidebar-tag",
-  "ranAt": "2026-11-12T17:20:06.369Z",
+  "ranAt": "2026-11-12T17:33:09.714Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -6,10 +6,10 @@ Angular (http://localhost:4200) vs React (http://localhost:5173), same seeded mo
 | -------------------------------------- | --------- | ----------- | ------ | -------------------- | ---------- | -------- | -------- |
 | form prefilled for demo                | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
 | invalid email shows error              | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
-| logout returns to home signed out      | PASS      | PASS        | PASS   | FAIL                 | PASS       | 0.000%   | **FAIL** |
+| logout returns to home signed out      | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
 | short new password shows error         | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
 | signed-out settings redirects to login | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
-| update bio then land on profile        | PASS      | PASS        | PASS   | FAIL                 | PASS       | 0.000%   | **FAIL** |
+| update bio then land on profile        | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
 
 ## form prefilled for demo
 
@@ -69,13 +69,13 @@ React journey video: [video/logout-returns-to-home-signed-out--react.webm](video
 | ---------------------- | ----------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | settings-before-logout | 0.000% PASS | ![](screens/logout-returns-to-home-signed-out--settings-before-logout--angular.png) | ![](screens/logout-returns-to-home-signed-out--settings-before-logout--react.png) | ![](diffs/logout-returns-to-home-signed-out--settings-before-logout--diff.png) |
 
-API calls (FAIL):
+API calls (PASS):
 
-| #   | Angular                                 | React             |
-| --- | --------------------------------------- | ----------------- |
-| 1   | `GET /user → 200`                       | `GET /user → 200` |
-| 2   | `GET /articles?limit=10&offset=0 → 200` | `—`               |
-| 3   | `GET /tags → 200`                       | `—`               |
+| #   | Angular                                 | React                                   |
+| --- | --------------------------------------- | --------------------------------------- |
+| 1   | `GET /user → 200`                       | `GET /user → 200`                       |
+| 2   | `GET /articles?limit=10&offset=0 → 200` | `GET /articles?limit=10&offset=0 → 200` |
+| 3   | `GET /tags → 200`                       | `GET /tags → 200`                       |
 
 Functional observations (PASS):
 
@@ -139,15 +139,15 @@ React journey video: [video/update-bio-then-land-on-profile--react.webm](video/u
 | -------------------------- | ----------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | settings-form-with-new-bio | 0.000% PASS | ![](screens/update-bio-then-land-on-profile--settings-form-with-new-bio--angular.png) | ![](screens/update-bio-then-land-on-profile--settings-form-with-new-bio--react.png) | ![](diffs/update-bio-then-land-on-profile--settings-form-with-new-bio--diff.png) |
 
-API calls (FAIL):
+API calls (PASS):
 
 | #   | Angular                                                                                                                              | React                                                                                                                                |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | 1   | `GET /user → 200`                                                                                                                    | `GET /user → 200`                                                                                                                    |
 | 2   | `PUT /user {"user":{"image":"","username":"demo","bio":"Updated bio from the settings journey.","email":"demo@conduit.test"}} → 200` | `PUT /user {"user":{"image":"","username":"demo","bio":"Updated bio from the settings journey.","email":"demo@conduit.test"}} → 200` |
-| 3   | `GET /profiles/demo → 200`                                                                                                           | `—`                                                                                                                                  |
-| 4   | `GET /profiles/demo → 200`                                                                                                           | `—`                                                                                                                                  |
-| 5   | `GET /articles?author=demo&limit=10&offset=0 → 200`                                                                                  | `—`                                                                                                                                  |
+| 3   | `GET /profiles/demo → 200`                                                                                                           | `GET /profiles/demo → 200`                                                                                                           |
+| 4   | `GET /profiles/demo → 200`                                                                                                           | `GET /profiles/demo → 200`                                                                                                           |
+| 5   | `GET /articles?author=demo&limit=10&offset=0 → 200`                                                                                  | `GET /articles?author=demo&limit=10&offset=0 → 200`                                                                                  |
 
 Functional observations (PASS):
 
@@ -159,6 +159,12 @@ Functional observations (PASS):
 | navLinksAfterSubmit | `["Home"," New Article"," Settings","demo"]`                                                                                                                                                            | `["Home"," New Article"," Settings","demo"]`                                                                                                                                                            |
 
 ## Deviations
+
+## Status after integration (parent session, full suite run 2026-11-12 17:31Z)
+
+Resolved. In the full parity run on the integration branch, with every package merged, all journeys for this screen pass every check (see `evidence/parity-results.md`). The notes below are what the child session recorded on its own branch, before the packages it depended on were merged. They are kept as the audit trail.
+
+---
 
 Two journeys fail only the **API calls + payloads** check, and only because of calls made by the screen the journey lands on, which belongs to another work package and is still a "not migrated" stub on the base branch. Every call made by the Settings screen itself matches exactly (`GET /user`, then `PUT /user` with the same payload and key order), and screenshots, observations and backend data match in all 6 journeys.
 

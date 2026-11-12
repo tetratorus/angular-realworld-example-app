@@ -2,12 +2,12 @@
   "screen": "settings",
   "journey": "update bio then land on profile",
   "journeyId": "update-bio-then-land-on-profile",
-  "ranAt": "2026-11-12T17:21:17.159Z",
+  "ranAt": "2026-11-12T17:33:51.529Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
     "visual": true,
-    "apiCalls": false,
+    "apiCalls": true,
     "observations": true
   },
   "errors": {
@@ -98,6 +98,31 @@
             "email": "demo@conduit.test"
           }
         },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
         "status": 200
       }
     ]

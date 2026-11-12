@@ -2,7 +2,7 @@
   "screen": "editor",
   "journey": "edit own article as alice",
   "journeyId": "edit-own-article-as-alice",
-  "ranAt": "2026-11-12T17:23:08.216Z",
+  "ranAt": "2026-11-12T17:32:51.342Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

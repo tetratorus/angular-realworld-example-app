@@ -2,7 +2,7 @@
   "screen": "article",
   "journey": "follow author as demo",
   "journeyId": "follow-author-as-demo",
-  "ranAt": "2026-11-12T17:21:03.866Z",
+  "ranAt": "2026-11-12T17:31:41.284Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

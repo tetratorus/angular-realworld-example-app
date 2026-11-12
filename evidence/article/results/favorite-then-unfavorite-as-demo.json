@@ -2,7 +2,7 @@
   "screen": "article",
   "journey": "favorite then unfavorite as demo",
   "journeyId": "favorite-then-unfavorite-as-demo",
-  "ranAt": "2026-11-12T17:21:00.689Z",
+  "ranAt": "2026-11-12T17:31:38.087Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

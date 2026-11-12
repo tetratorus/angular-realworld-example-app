@@ -2,7 +2,7 @@
   "screen": "settings",
   "journey": "invalid email shows error",
   "journeyId": "invalid-email-shows-error",
-  "ranAt": "2026-11-12T17:21:21.756Z",
+  "ranAt": "2026-11-12T17:33:54.947Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

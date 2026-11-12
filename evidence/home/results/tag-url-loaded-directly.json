@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "tag url loaded directly",
   "journeyId": "tag-url-loaded-directly",
-  "ranAt": "2026-11-12T17:20:14.830Z",
+  "ranAt": "2026-11-12T17:33:18.661Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

@@ -242,6 +242,12 @@ Functional observations (PASS):
 
 ## Deviations
 
+## Status after integration (parent session, full suite run 2026-11-12 17:31Z)
+
+Resolved. In the full parity run on the integration branch, with every package merged, all journeys for this screen pass every check (see `evidence/parity-results.md`). The notes below are what the child session recorded on its own branch, before the packages it depended on were merged. They are kept as the audit trail.
+
+---
+
 ### Results in this report were run together with the home work package's page
 
 Login and register redirect to `/`, so three journeys (login success, invalid credentials then retry, register) end on the home page. The parity check compares the whole journey, including the home page's own API calls (`GET /articles?limit=10&offset=0`, `GET /tags`). On this branch alone `react-app/src/pages/HomePage.tsx` is still the placeholder stub, so those calls are missing on React.

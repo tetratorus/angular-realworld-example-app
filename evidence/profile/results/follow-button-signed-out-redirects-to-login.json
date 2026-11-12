@@ -2,7 +2,7 @@
   "screen": "profile",
   "journey": "follow button signed out redirects to login",
   "journeyId": "follow-button-signed-out-redirects-to-login",
-  "ranAt": "2026-11-12T17:19:43.457Z",
+  "ranAt": "2026-11-12T17:33:26.470Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

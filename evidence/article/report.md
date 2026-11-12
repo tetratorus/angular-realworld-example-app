@@ -182,6 +182,12 @@ Functional observations (PASS):
 
 ## Deviations
 
+## Status after integration (parent session, full suite run 2026-11-12 17:31Z)
+
+Resolved. In the full parity run on the integration branch, with every package merged, all journeys for this screen pass every check (see `evidence/parity-results.md`). The notes below are what the child session recorded on its own branch, before the packages it depended on were merged. They are kept as the audit trail.
+
+---
+
 No check fails: 5/5 journeys pass all checks with 0.000% pixel difference.
 
 **How this was run (read before trusting the numbers).** The page links to two screens owned by other work packages, and both were still stubs on the base branch:

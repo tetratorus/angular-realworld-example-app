@@ -2,7 +2,7 @@
   "screen": "auth",
   "journey": "login success as demo",
   "journeyId": "login-success-as-demo",
-  "ranAt": "2026-11-12T17:20:43.021Z",
+  "ranAt": "2026-11-12T17:31:53.163Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

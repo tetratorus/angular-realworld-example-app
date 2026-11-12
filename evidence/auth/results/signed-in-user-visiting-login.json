@@ -2,7 +2,7 @@
   "screen": "auth",
   "journey": "signed-in user visiting login",
   "journeyId": "signed-in-user-visiting-login",
-  "ranAt": "2026-11-12T17:21:05.167Z",
+  "ranAt": "2026-11-12T17:32:15.108Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

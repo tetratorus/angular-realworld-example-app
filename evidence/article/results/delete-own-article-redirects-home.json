@@ -2,7 +2,7 @@
   "screen": "article",
   "journey": "delete own article redirects home",
   "journeyId": "delete-own-article-redirects-home",
-  "ranAt": "2026-11-12T17:21:11.343Z",
+  "ranAt": "2026-11-12T17:31:48.634Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

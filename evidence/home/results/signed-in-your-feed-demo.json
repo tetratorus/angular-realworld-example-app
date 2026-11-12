@@ -2,7 +2,7 @@
   "screen": "home",
   "journey": "signed-in your feed (demo)",
   "journeyId": "signed-in-your-feed-demo",
-  "ranAt": "2026-11-12T17:20:10.814Z",
+  "ranAt": "2026-11-12T17:33:14.594Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
