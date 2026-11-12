@@ -37,8 +37,8 @@ function ArticleComment({ comment, onDelete }: { comment: Comment; onDelete: () 
 
 /**
  * Work package: comments. Port of the comments section of features/article/pages/article/article.component.html/.ts
- * (comment form, sign-in prompt, comment list, delete). Renders the whole `.row` below `.article-actions`;
- * ArticlePage mounts it as `<ArticleComments article={article} />` inside `.container.page`.
+ * (comment form, sign-in prompt, comment list, delete). Renders the contents of
+ * `.row > .col-xs-12.col-md-8.offset-md-2`; ArticlePage owns that wrapper and mounts `<ArticleComments article={article} />` in it.
  * Loads `GET /articles/:slug/comments` itself, after the article.
  */
 export default function ArticleComments({ article }: { article: Article }) {
@@ -86,46 +86,43 @@ export default function ArticleComments({ article }: { article: Article }) {
   };
 
   return (
-    <div className="row">
-      <div className="col-xs-12 col-md-8 offset-md-2">
-        {isAuthenticated && (
-          <div>
-            <ListErrors errors={commentFormErrors} />
-            <form className="card comment-form" onSubmit={addComment}>
-              <fieldset disabled={isSubmitting}>
-                <div className="card-block">
-                  <textarea
-                    className="form-control"
-                    placeholder="Write a comment..."
-                    rows={3}
-                    value={commentBody}
-                    onChange={e => setCommentBody(e.target.value)}
-                  ></textarea>
-                </div>
-                <div className="card-footer">
-                  <img src={defaultImage(currentUser?.image)} className="comment-author-img" />
-                  <button className="btn btn-sm btn-primary" type="submit">
-                    Post Comment
-                  </button>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        )}
+    <>
+      {isAuthenticated && (
+        <div>
+          <ListErrors errors={commentFormErrors} />
+          <form className="card comment-form" onSubmit={addComment}>
+            <fieldset disabled={isSubmitting}>
+              <div className="card-block">
+                <textarea
+                  className="form-control"
+                  placeholder="Write a comment..."
+                  rows={3}
+                  value={commentBody}
+                  onChange={e => setCommentBody(e.target.value)}
+                ></textarea>
+              </div>
+              <div className="card-footer">
+                <img src={defaultImage(currentUser?.image)} className="comment-author-img" />
+                <button className="btn btn-sm btn-primary" type="submit">
+                  Post Comment
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      )}
 
-        {!isAuthenticated && (
-          <div>
-            <Link to="/login">Sign in</Link> or <Link to="/register">sign up</Link> to add comments on this
-            article.{' '}
-          </div>
-        )}
+      {!isAuthenticated && (
+        <div>
+          <Link to="/login">Sign in</Link> or <Link to="/register">sign up</Link> to add comments on this article.{' '}
+        </div>
+      )}
 
-        <ListErrors errors={deleteCommentErrors} />
+      <ListErrors errors={deleteCommentErrors} />
 
-        {comments.map(comment => (
-          <ArticleComment key={comment.id} comment={comment} onDelete={() => deleteComment(comment)} />
-        ))}
-      </div>
-    </div>
+      {comments.map(comment => (
+        <ArticleComment key={comment.id} comment={comment} onDelete={() => deleteComment(comment)} />
+      ))}
+    </>
   );
 }

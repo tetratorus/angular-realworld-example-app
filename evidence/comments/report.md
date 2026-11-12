@@ -4,11 +4,11 @@ Angular (http://localhost:4200) vs React (http://localhost:5173), same seeded mo
 
 | Journey                                  | No errors | Same states | Visual | API calls + payloads | Functional | Max diff | Result   |
 | ---------------------------------------- | --------- | ----------- | ------ | -------------------- | ---------- | -------- | -------- |
-| add a comment as demo                    | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.032%   | **PASS** |
-| blank comment shows error                | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.031%   | **PASS** |
-| delete own comment                       | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.035%   | **PASS** |
-| other users comments have no delete icon | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.025%   | **PASS** |
-| signed out sees sign-in prompt           | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.036%   | **PASS** |
+| add a comment as demo                    | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
+| blank comment shows error                | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
+| delete own comment                       | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
+| other users comments have no delete icon | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
+| signed out sees sign-in prompt           | PASS      | PASS        | PASS   | PASS                 | PASS       | 0.000%   | **PASS** |
 
 ## add a comment as demo
 
@@ -16,9 +16,9 @@ React journey video: [video/add-a-comment-as-demo--react.webm](video/add-a-comme
 
 | State          | Diff        | Angular                                                         | React                                                         | Diff image                                                 |
 | -------------- | ----------- | --------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- |
-| comment-form   | 0.032% PASS | ![](screens/add-a-comment-as-demo--comment-form--angular.png)   | ![](screens/add-a-comment-as-demo--comment-form--react.png)   | ![](diffs/add-a-comment-as-demo--comment-form--diff.png)   |
-| comment-typed  | 0.032% PASS | ![](screens/add-a-comment-as-demo--comment-typed--angular.png)  | ![](screens/add-a-comment-as-demo--comment-typed--react.png)  | ![](diffs/add-a-comment-as-demo--comment-typed--diff.png)  |
-| comment-posted | 0.029% PASS | ![](screens/add-a-comment-as-demo--comment-posted--angular.png) | ![](screens/add-a-comment-as-demo--comment-posted--react.png) | ![](diffs/add-a-comment-as-demo--comment-posted--diff.png) |
+| comment-form   | 0.000% PASS | ![](screens/add-a-comment-as-demo--comment-form--angular.png)   | ![](screens/add-a-comment-as-demo--comment-form--react.png)   | ![](diffs/add-a-comment-as-demo--comment-form--diff.png)   |
+| comment-typed  | 0.000% PASS | ![](screens/add-a-comment-as-demo--comment-typed--angular.png)  | ![](screens/add-a-comment-as-demo--comment-typed--react.png)  | ![](diffs/add-a-comment-as-demo--comment-typed--diff.png)  |
+| comment-posted | 0.000% PASS | ![](screens/add-a-comment-as-demo--comment-posted--angular.png) | ![](screens/add-a-comment-as-demo--comment-posted--react.png) | ![](diffs/add-a-comment-as-demo--comment-posted--diff.png) |
 
 API calls (PASS):
 
@@ -46,8 +46,8 @@ React journey video: [video/blank-comment-shows-error--react.webm](video/blank-c
 
 | State                             | Diff        | Angular                                                                                | React                                                                                | Diff image                                                                        |
 | --------------------------------- | ----------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| blank-comment-error               | 0.031% PASS | ![](screens/blank-comment-shows-error--blank-comment-error--angular.png)               | ![](screens/blank-comment-shows-error--blank-comment-error--react.png)               | ![](diffs/blank-comment-shows-error--blank-comment-error--diff.png)               |
-| error-cleared-after-valid-comment | 0.029% PASS | ![](screens/blank-comment-shows-error--error-cleared-after-valid-comment--angular.png) | ![](screens/blank-comment-shows-error--error-cleared-after-valid-comment--react.png) | ![](diffs/blank-comment-shows-error--error-cleared-after-valid-comment--diff.png) |
+| blank-comment-error               | 0.000% PASS | ![](screens/blank-comment-shows-error--blank-comment-error--angular.png)               | ![](screens/blank-comment-shows-error--blank-comment-error--react.png)               | ![](diffs/blank-comment-shows-error--blank-comment-error--diff.png)               |
+| error-cleared-after-valid-comment | 0.000% PASS | ![](screens/blank-comment-shows-error--error-cleared-after-valid-comment--angular.png) | ![](screens/blank-comment-shows-error--error-cleared-after-valid-comment--react.png) | ![](diffs/blank-comment-shows-error--error-cleared-after-valid-comment--diff.png) |
 
 API calls (PASS):
 
@@ -74,8 +74,8 @@ React journey video: [video/delete-own-comment--react.webm](video/delete-own-com
 
 | State         | Diff        | Angular                                                     | React                                                     | Diff image                                             |
 | ------------- | ----------- | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------ |
-| before-delete | 0.032% PASS | ![](screens/delete-own-comment--before-delete--angular.png) | ![](screens/delete-own-comment--before-delete--react.png) | ![](diffs/delete-own-comment--before-delete--diff.png) |
-| after-delete  | 0.035% PASS | ![](screens/delete-own-comment--after-delete--angular.png)  | ![](screens/delete-own-comment--after-delete--react.png)  | ![](diffs/delete-own-comment--after-delete--diff.png)  |
+| before-delete | 0.000% PASS | ![](screens/delete-own-comment--before-delete--angular.png) | ![](screens/delete-own-comment--before-delete--react.png) | ![](diffs/delete-own-comment--before-delete--diff.png) |
+| after-delete  | 0.000% PASS | ![](screens/delete-own-comment--after-delete--angular.png)  | ![](screens/delete-own-comment--after-delete--react.png)  | ![](diffs/delete-own-comment--after-delete--diff.png)  |
 
 API calls (PASS):
 
@@ -101,7 +101,7 @@ React journey video: [video/other-users-comments-have-no-delete-icon--react.webm
 
 | State            | Diff        | Angular                                                                              | React                                                                              | Diff image                                                                      |
 | ---------------- | ----------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| signed-in-as-bob | 0.025% PASS | ![](screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--angular.png) | ![](screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--react.png) | ![](diffs/other-users-comments-have-no-delete-icon--signed-in-as-bob--diff.png) |
+| signed-in-as-bob | 0.000% PASS | ![](screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--angular.png) | ![](screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--react.png) | ![](diffs/other-users-comments-have-no-delete-icon--signed-in-as-bob--diff.png) |
 
 API calls (PASS):
 
@@ -125,7 +125,7 @@ React journey video: [video/signed-out-sees-sign-in-prompt--react.webm](video/si
 
 | State               | Diff        | Angular                                                                       | React                                                                       | Diff image                                                               |
 | ------------------- | ----------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| signed-out-comments | 0.036% PASS | ![](screens/signed-out-sees-sign-in-prompt--signed-out-comments--angular.png) | ![](screens/signed-out-sees-sign-in-prompt--signed-out-comments--react.png) | ![](diffs/signed-out-sees-sign-in-prompt--signed-out-comments--diff.png) |
+| signed-out-comments | 0.000% PASS | ![](screens/signed-out-sees-sign-in-prompt--signed-out-comments--angular.png) | ![](screens/signed-out-sees-sign-in-prompt--signed-out-comments--react.png) | ![](diffs/signed-out-sees-sign-in-prompt--signed-out-comments--diff.png) |
 
 API calls (PASS):
 

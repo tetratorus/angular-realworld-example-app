@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "signed out sees sign-in prompt",
   "journeyId": "signed-out-sees-sign-in-prompt",
-  "ranAt": "2026-11-12T17:18:04.722Z",
+  "ranAt": "2026-11-12T17:21:02.969Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
@@ -20,8 +20,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/signed-out-sees-sign-in-prompt--signed-out-comments--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/signed-out-sees-sign-in-prompt--signed-out-comments--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/signed-out-sees-sign-in-prompt--signed-out-comments--diff.png",
-      "pct": 0.03564887493458922,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1274],
         "react": [1440, 1274]

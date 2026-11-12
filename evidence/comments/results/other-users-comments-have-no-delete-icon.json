@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "other users comments have no delete icon",
   "journeyId": "other-users-comments-have-no-delete-icon",
-  "ranAt": "2026-11-12T17:18:22.874Z",
+  "ranAt": "2026-11-12T17:21:21.037Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
@@ -20,8 +20,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/other-users-comments-have-no-delete-icon--signed-in-as-bob--diff.png",
-      "pct": 0.025146198830409357,
-      "differing": 516,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1425],
         "react": [1440, 1425]

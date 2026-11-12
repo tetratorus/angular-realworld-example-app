@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "delete own comment",
   "journeyId": "delete-own-comment",
-  "ranAt": "2026-11-12T17:18:19.323Z",
+  "ranAt": "2026-11-12T17:21:17.587Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
@@ -20,8 +20,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--before-delete--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--before-delete--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/delete-own-comment--before-delete--diff.png",
-      "pct": 0.031871345029239766,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1425],
         "react": [1440, 1425]
@@ -33,8 +33,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--after-delete--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--after-delete--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/delete-own-comment--after-delete--diff.png",
-      "pct": 0.03498972778633796,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1298],
         "react": [1440, 1298]

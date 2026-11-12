@@ -2,7 +2,7 @@
   "screen": "comments",
   "journey": "add a comment as demo",
   "journeyId": "add-a-comment-as-demo",
-  "ranAt": "2026-11-12T17:18:10.280Z",
+  "ranAt": "2026-11-12T17:21:08.509Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
@@ -20,8 +20,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-form--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-form--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-form--diff.png",
-      "pct": 0.031871345029239766,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1425],
         "react": [1440, 1425]
@@ -33,8 +33,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-typed--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-typed--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-typed--diff.png",
-      "pct": 0.031871345029239766,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1425],
         "react": [1440, 1425]
@@ -46,8 +46,8 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-posted--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-posted--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-posted--diff.png",
-      "pct": 0.02926331615120275,
-      "differing": 654,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 1552],
         "react": [1440, 1552]
