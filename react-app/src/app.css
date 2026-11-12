@@ -2,3 +2,18 @@
 .page-link {
   cursor: pointer;
 }
+
+/* Same layout as app-root in the theme (realworld/assets/theme/styles.css): footer pinned to the bottom. */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#root > *:not(footer) {
+  flex-shrink: 0;
+}
+
+#root > footer {
+  margin-top: auto;
+}
