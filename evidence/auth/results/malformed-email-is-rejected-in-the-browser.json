@@ -1,0 +1,67 @@
+{
+  "screen": "auth",
+  "journey": "malformed email is rejected in the browser",
+  "journeyId": "malformed-email-is-rejected-in-the-browser",
+  "ranAt": "2026-11-12T17:21:02.242Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "email-is-invalid",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/malformed-email-is-rejected-in-the-browser--email-is-invalid--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/malformed-email-is-rejected-in-the-browser--email-is-invalid--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/malformed-email-is-rejected-in-the-browser--email-is-invalid--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [],
+    "react": []
+  },
+  "observations": {
+    "angular": {
+      "buttonDisabledBeforeSubmit": false,
+      "invalid.url": "/register",
+      "invalid.title": "Sign up",
+      "invalid.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "invalid.inputs": ["Username", "Email", "Password"],
+      "invalid.errors": ["email is invalid"],
+      "invalid.buttonText": "Sign up",
+      "invalid.buttonDisabled": false,
+      "invalid.signedIn": false
+    },
+    "react": {
+      "buttonDisabledBeforeSubmit": false,
+      "invalid.url": "/register",
+      "invalid.title": "Sign up",
+      "invalid.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "invalid.inputs": ["Username", "Email", "Password"],
+      "invalid.errors": ["email is invalid"],
+      "invalid.buttonText": "Sign up",
+      "invalid.buttonDisabled": false,
+      "invalid.signedIn": false
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/malformed-email-is-rejected-in-the-browser--react.webm"
+}

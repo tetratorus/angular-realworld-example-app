@@ -1,0 +1,67 @@
+{
+  "screen": "auth",
+  "journey": "signed-in user visiting login",
+  "journeyId": "signed-in-user-visiting-login",
+  "ranAt": "2026-11-12T17:21:05.167Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "login-while-signed-in",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/signed-in-user-visiting-login--login-while-signed-in--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/signed-in-user-visiting-login--login-while-signed-in--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/signed-in-user-visiting-login--login-while-signed-in--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/",
+      "authFormShown": 0,
+      "nav": ["Home", "New Article", "Settings", "demo"],
+      "signedIn": true
+    },
+    "react": {
+      "url": "/",
+      "authFormShown": 0,
+      "nav": ["Home", "New Article", "Settings", "demo"],
+      "signedIn": true
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/signed-in-user-visiting-login--react.webm"
+}
