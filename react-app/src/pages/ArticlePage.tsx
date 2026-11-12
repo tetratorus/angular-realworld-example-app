@@ -10,7 +10,7 @@ import FollowButton from '../components/FollowButton';
 import ListErrors from '../components/ListErrors';
 import { renderMarkdown } from '../lib/markdown';
 
-/** Port of features/article/pages/article/article.component; the comments `.row` is rendered by ArticleComments. */
+/** Port of features/article/pages/article/article.component. */
 export default function ArticlePage() {
   const { slug = '' } = useParams();
   const navigate = useNavigate();
@@ -110,7 +110,11 @@ export default function ArticlePage() {
               <ArticleMeta article={article}>{actions(article)}</ArticleMeta>
             </div>
 
-            <ArticleComments article={article} />
+            <div className="row">
+              <div className="col-xs-12 col-md-8 offset-md-2">
+                <ArticleComments article={article} />
+              </div>
+            </div>
           </div>
         </>
       )}

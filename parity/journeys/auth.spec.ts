@@ -15,6 +15,8 @@ const submit = (page: Page) => page.locator('form button[type="submit"]');
 /** Everything visible on the auth form that must match between the apps. */
 async function observeForm({ page, observe }: JourneyContext, key: string) {
   observe(`${key}.url`, path(page));
+  // Angular briefly renders an empty <h1> right after switching forms; read the settled title.
+  await page.locator('.auth-page h1').filter({ hasText: /\S/ }).waitFor();
   observe(`${key}.title`, await page.locator('.auth-page h1').innerText());
   observe(`${key}.switchLink`, {
     text: await page.locator('.auth-page p.text-xs-center a').innerText(),
