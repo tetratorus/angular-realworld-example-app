@@ -1,0 +1,20 @@
+/* Component-scoped styles carried over from Angular components. */
+.page-link {
+  cursor: pointer;
+}
+
+/* Sticky footer: the theme's rules target Angular's <app-root>; same rules for React's #root. */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#root > *:not(footer) {
+  flex-shrink: 0;
+}
+
+/* Angular puts margin-top: auto on the <app-layout-footer> wrapper, so <footer> keeps its own 42px margin. */
+#root > :nth-last-child(2) {
+  margin-bottom: auto;
+}

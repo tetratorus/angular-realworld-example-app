@@ -1,0 +1,79 @@
+{
+  "screen": "profile",
+  "journey": "unknown username",
+  "journeyId": "unknown-username",
+  "ranAt": "2026-11-12T17:33:41.920Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "unknown-user",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/unknown-username--unknown-user--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/unknown-username--unknown-user--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/unknown-username--unknown-user--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/profiles/nosuchuser",
+        "query": {},
+        "body": null,
+        "status": 404
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/profiles/nosuchuser",
+        "query": {},
+        "body": null,
+        "status": 404
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/profile/nosuchuser",
+      "errorMessages": [],
+      "errorListCount": 1,
+      "userInfoCount": 0,
+      "tabsCount": 0,
+      "backend": {
+        "errors": {
+          "profile": ["not found"]
+        }
+      }
+    },
+    "react": {
+      "url": "/profile/nosuchuser",
+      "errorMessages": [],
+      "errorListCount": 1,
+      "userInfoCount": 0,
+      "tabsCount": 0,
+      "backend": {
+        "errors": {
+          "profile": ["not found"]
+        }
+      }
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/unknown-username--react.webm"
+}

@@ -1,0 +1,167 @@
+{
+  "screen": "auth",
+  "journey": "login success as demo",
+  "journeyId": "login-success-as-demo",
+  "ranAt": "2026-11-12T17:31:53.163Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "login-form",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--login-form--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--login-form--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/login-success-as-demo--login-form--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "login-filled",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--login-filled--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--login-filled--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/login-success-as-demo--login-filled--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "home-signed-in",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--home-signed-in--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/login-success-as-demo--home-signed-in--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/login-success-as-demo--home-signed-in--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "POST",
+        "path": "/users/login",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "demo@conduit.test",
+            "password": "password123"
+          }
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "POST",
+        "path": "/users/login",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "demo@conduit.test",
+            "password": "password123"
+          }
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "empty.url": "/login",
+      "empty.title": "Sign in",
+      "empty.switchLink": {
+        "text": "Need an account?",
+        "href": "/register"
+      },
+      "empty.inputs": ["Email", "Password"],
+      "empty.errors": [],
+      "empty.buttonText": "Sign in",
+      "empty.buttonDisabled": true,
+      "empty.signedIn": false,
+      "filled.buttonDisabled": false,
+      "after.url": "/",
+      "after.nav": ["Home", "New Article", "Settings", "demo"],
+      "after.signedIn": true,
+      "after.currentUser": {
+        "username": "demo",
+        "email": "demo@conduit.test"
+      }
+    },
+    "react": {
+      "empty.url": "/login",
+      "empty.title": "Sign in",
+      "empty.switchLink": {
+        "text": "Need an account?",
+        "href": "/register"
+      },
+      "empty.inputs": ["Email", "Password"],
+      "empty.errors": [],
+      "empty.buttonText": "Sign in",
+      "empty.buttonDisabled": true,
+      "empty.signedIn": false,
+      "filled.buttonDisabled": false,
+      "after.url": "/",
+      "after.nav": ["Home", "New Article", "Settings", "demo"],
+      "after.signedIn": true,
+      "after.currentUser": {
+        "username": "demo",
+        "email": "demo@conduit.test"
+      }
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/login-success-as-demo--react.webm"
+}

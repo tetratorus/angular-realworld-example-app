@@ -1,0 +1,129 @@
+{
+  "screen": "article",
+  "journey": "follow author as demo",
+  "journeyId": "follow-author-as-demo",
+  "ranAt": "2026-11-12T17:31:41.284Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "following-author",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/follow-author-as-demo--following-author--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/follow-author-as-demo--following-author--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/follow-author-as-demo--following-author--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1049],
+        "react": [1440, 1049]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/profiles/carol/follow",
+        "query": {},
+        "body": {},
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/profiles/carol/follow",
+        "query": {},
+        "body": {},
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "before.followButtons": ["Follow carol", "Follow carol"],
+      "following.url": "/article/designing-an-empty-state",
+      "following.title": ["Designing an empty state"],
+      "following.bannerMeta": ["carol October 3, 2026 Unfollow carol Favorite Article (1)"],
+      "following.actionsMeta": ["carol October 3, 2026 Unfollow carol Favorite Article (1)"],
+      "following.bannerButtons": ["Unfollow carol", "Favorite Article (1)"],
+      "following.buttonClasses": [
+        "btn btn-sm action-btn btn-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "backend.following": true,
+      "backend.feedHasCarol": true
+    },
+    "react": {
+      "before.followButtons": ["Follow carol", "Follow carol"],
+      "following.url": "/article/designing-an-empty-state",
+      "following.title": ["Designing an empty state"],
+      "following.bannerMeta": ["carol October 3, 2026 Unfollow carol Favorite Article (1)"],
+      "following.actionsMeta": ["carol October 3, 2026 Unfollow carol Favorite Article (1)"],
+      "following.bannerButtons": ["Unfollow carol", "Favorite Article (1)"],
+      "following.buttonClasses": [
+        "btn btn-sm action-btn btn-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "backend.following": true,
+      "backend.feedHasCarol": true
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/video/follow-author-as-demo--react.webm"
+}

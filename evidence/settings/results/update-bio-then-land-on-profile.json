@@ -1,0 +1,175 @@
+{
+  "screen": "settings",
+  "journey": "update bio then land on profile",
+  "journeyId": "update-bio-then-land-on-profile",
+  "ranAt": "2026-11-12T17:33:51.529Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "settings-form-with-new-bio",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/update-bio-then-land-on-profile--settings-form-with-new-bio--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/update-bio-then-land-on-profile--settings-form-with-new-bio--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/diffs/update-bio-then-land-on-profile--settings-form-with-new-bio--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "PUT",
+        "path": "/user",
+        "query": {},
+        "body": {
+          "user": {
+            "image": "",
+            "username": "demo",
+            "bio": "Updated bio from the settings journey.",
+            "email": "demo@conduit.test"
+          }
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "PUT",
+        "path": "/user",
+        "query": {},
+        "body": {
+          "user": {
+            "image": "",
+            "username": "demo",
+            "bio": "Updated bio from the settings journey.",
+            "email": "demo@conduit.test"
+          }
+        },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "urlAfterSubmit": "/profile/demo",
+      "backendUser": {
+        "user": {
+          "email": "demo@conduit.test",
+          "token": "eyJ1c2VybmFtZSI6ImRlbW8ifQ.U3QHOI0d_K6BwzOhfc35h6BXkQ_4miYUEF9BpMXxH3s",
+          "username": "demo",
+          "bio": "Updated bio from the settings journey.",
+          "image": null
+        }
+      },
+      "backendProfile": {
+        "profile": {
+          "username": "demo",
+          "bio": "Updated bio from the settings journey.",
+          "image": null,
+          "following": false
+        }
+      },
+      "navLinksAfterSubmit": ["Home", " New Article", " Settings", "demo"]
+    },
+    "react": {
+      "urlAfterSubmit": "/profile/demo",
+      "backendUser": {
+        "user": {
+          "email": "demo@conduit.test",
+          "token": "eyJ1c2VybmFtZSI6ImRlbW8ifQ.U3QHOI0d_K6BwzOhfc35h6BXkQ_4miYUEF9BpMXxH3s",
+          "username": "demo",
+          "bio": "Updated bio from the settings journey.",
+          "image": null
+        }
+      },
+      "backendProfile": {
+        "profile": {
+          "username": "demo",
+          "bio": "Updated bio from the settings journey.",
+          "image": null,
+          "following": false
+        }
+      },
+      "navLinksAfterSubmit": ["Home", " New Article", " Settings", "demo"]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/video/update-bio-then-land-on-profile--react.webm"
+}

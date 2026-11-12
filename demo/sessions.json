@@ -1,0 +1,18 @@
+{
+  "parent": {
+    "id": "e3ce0eada82c455f94be64cadd2af7f1",
+    "url": "https://lentan.devinenterprise.com/sessions/e3ce0eada82c455f94be64cadd2af7f1",
+    "started": "2026-11-13T01:02+08:00"
+  },
+  "children_launched": "2026-11-13T01:15:48+08:00",
+  "children": {
+    "home": "92eeb3ed8ecb4acdaac759fc40e9160d",
+    "auth": "71f0c39a1b6144afb6abf37d329c06f0",
+    "article": "7b69db0b249c4cffa4b81d5f6e6bb48e",
+    "comments": "8371aa70ae224f69bf00c1215172ba0b",
+    "editor": "06db71b46bee4ef3a88bea2c563a74b1",
+    "profile": "ca39d65d016245419fd66286a0f5eb05",
+    "settings": "7452418157ca4874abf7c8f95e6633ae"
+  },
+  "integration_branch": "devin/1794503322-react-migration"
+}

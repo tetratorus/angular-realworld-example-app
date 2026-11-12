@@ -1,0 +1,231 @@
+{
+  "screen": "comments",
+  "journey": "add a comment as demo",
+  "journeyId": "add-a-comment-as-demo",
+  "ranAt": "2026-11-12T17:32:23.782Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "comment-form",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-form--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-form--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-form--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1425],
+        "react": [1440, 1425]
+      },
+      "pass": true
+    },
+    {
+      "name": "comment-typed",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-typed--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-typed--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-typed--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1425],
+        "react": [1440, 1425]
+      },
+      "pass": true
+    },
+    {
+      "name": "comment-posted",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-posted--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/add-a-comment-as-demo--comment-posted--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/add-a-comment-as-demo--comment-posted--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1552],
+        "react": [1440, 1552]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": "Parity check: comments look the same in both apps."
+          }
+        },
+        "status": 201
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": "Parity check: comments look the same in both apps."
+          }
+        },
+        "status": 201
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "prompt count": 0,
+      "form avatar src": "/assets/default-avatar.svg",
+      "textarea after post": "",
+      "error items": [],
+      "comments on screen": [
+        {
+          "body": "Parity check: comments look the same in both apps.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "hasDelete": true
+        },
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "hasDelete": true
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "hasDelete": false
+        }
+      ],
+      "backend comments": [
+        {
+          "author": "demo",
+          "body": "Parity check: comments look the same in both apps."
+        },
+        {
+          "author": "demo",
+          "body": "Bookmarking this for the team."
+        },
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ]
+    },
+    "react": {
+      "prompt count": 0,
+      "form avatar src": "/assets/default-avatar.svg",
+      "textarea after post": "",
+      "error items": [],
+      "comments on screen": [
+        {
+          "body": "Parity check: comments look the same in both apps.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "hasDelete": true
+        },
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "hasDelete": true
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "hasDelete": false
+        }
+      ],
+      "backend comments": [
+        {
+          "author": "demo",
+          "body": "Parity check: comments look the same in both apps."
+        },
+        {
+          "author": "demo",
+          "body": "Bookmarking this for the team."
+        },
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/video/add-a-comment-as-demo--react.webm"
+}

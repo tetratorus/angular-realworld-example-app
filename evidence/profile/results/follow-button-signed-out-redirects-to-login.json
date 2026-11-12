@@ -1,0 +1,99 @@
+{
+  "screen": "profile",
+  "journey": "follow button signed out redirects to login",
+  "journeyId": "follow-button-signed-out-redirects-to-login",
+  "ranAt": "2026-11-12T17:33:26.470Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/login",
+      "backend.profile": {
+        "profile": {
+          "username": "alice",
+          "bio": "Frontend engineer. Writes about forms and state.",
+          "image": "http://localhost:3000/avatars/alice.svg",
+          "following": false
+        }
+      }
+    },
+    "react": {
+      "url": "/login",
+      "backend.profile": {
+        "profile": {
+          "username": "alice",
+          "bio": "Frontend engineer. Writes about forms and state.",
+          "image": "http://localhost:3000/avatars/alice.svg",
+          "following": false
+        }
+      }
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/follow-button-signed-out-redirects-to-login--react.webm"
+}

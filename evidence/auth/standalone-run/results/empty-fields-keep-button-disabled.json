@@ -1,0 +1,112 @@
+{
+  "screen": "auth",
+  "journey": "empty fields keep button disabled",
+  "journeyId": "empty-fields-keep-button-disabled",
+  "ranAt": "2026-11-12T17:20:26.158Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "login-email-only",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/empty-fields-keep-button-disabled--login-email-only--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/empty-fields-keep-button-disabled--login-email-only--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/empty-fields-keep-button-disabled--login-email-only--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "register-without-username",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/empty-fields-keep-button-disabled--register-without-username--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/empty-fields-keep-button-disabled--register-without-username--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/empty-fields-keep-button-disabled--register-without-username--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [],
+    "react": []
+  },
+  "observations": {
+    "angular": {
+      "login.empty": true,
+      "login.emailOnly": true,
+      "login.passwordOnly": true,
+      "login.afterClick.url": "/login",
+      "register.empty.url": "/register",
+      "register.empty.title": "Sign up",
+      "register.empty.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "register.empty.inputs": ["Username", "Email", "Password"],
+      "register.empty.errors": [],
+      "register.empty.buttonText": "Sign up",
+      "register.empty.buttonDisabled": true,
+      "register.empty.signedIn": false,
+      "register.noUsername": true,
+      "register.allFilled": false,
+      "login.back.url": "/login",
+      "login.back.title": "Sign in",
+      "login.back.switchLink": {
+        "text": "Need an account?",
+        "href": "/register"
+      },
+      "login.back.inputs": ["Email", "Password"],
+      "login.back.errors": [],
+      "login.back.buttonText": "Sign in",
+      "login.back.buttonDisabled": true,
+      "login.back.signedIn": false
+    },
+    "react": {
+      "login.empty": true,
+      "login.emailOnly": true,
+      "login.passwordOnly": true,
+      "login.afterClick.url": "/login",
+      "register.empty.url": "/register",
+      "register.empty.title": "Sign up",
+      "register.empty.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "register.empty.inputs": ["Username", "Email", "Password"],
+      "register.empty.errors": [],
+      "register.empty.buttonText": "Sign up",
+      "register.empty.buttonDisabled": true,
+      "register.empty.signedIn": false,
+      "register.noUsername": true,
+      "register.allFilled": false,
+      "login.back.url": "/login",
+      "login.back.title": "Sign in",
+      "login.back.switchLink": {
+        "text": "Need an account?",
+        "href": "/register"
+      },
+      "login.back.inputs": ["Email", "Password"],
+      "login.back.errors": [],
+      "login.back.buttonText": "Sign in",
+      "login.back.buttonDisabled": true,
+      "login.back.signedIn": false
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/empty-fields-keep-button-disabled--react.webm"
+}

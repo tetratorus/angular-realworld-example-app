@@ -1,0 +1,137 @@
+{
+  "screen": "profile",
+  "journey": "user with no posts shows empty message",
+  "journeyId": "user-with-no-posts-shows-empty-message",
+  "ranAt": "2026-11-12T17:33:38.966Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "demo-profile-empty",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/user-with-no-posts-shows-empty-message--demo-profile-empty--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/user-with-no-posts-shows-empty-message--demo-profile-empty--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/user-with-no-posts-shows-empty-message--demo-profile-empty--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "demo.url": "/profile/demo",
+      "demo.username": "demo",
+      "demo.bio": "Demo account used by the test scenarios.",
+      "demo.image": "/assets/default-avatar.svg",
+      "demo.actionButtons": ["   Follow demo"],
+      "demo.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/demo",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/demo/favorites",
+          "active": false
+        }
+      ],
+      "demo.articleTitles": [],
+      "demo.emptyMessage": ["No articles are here... yet."],
+      "demo.pages": [],
+      "backend.articleCount": 0
+    },
+    "react": {
+      "demo.url": "/profile/demo",
+      "demo.username": "demo",
+      "demo.bio": "Demo account used by the test scenarios.",
+      "demo.image": "/assets/default-avatar.svg",
+      "demo.actionButtons": ["   Follow demo"],
+      "demo.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/demo",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/demo/favorites",
+          "active": false
+        }
+      ],
+      "demo.articleTitles": [],
+      "demo.emptyMessage": ["No articles are here... yet."],
+      "demo.pages": [],
+      "backend.articleCount": 0
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/user-with-no-posts-shows-empty-message--react.webm"
+}

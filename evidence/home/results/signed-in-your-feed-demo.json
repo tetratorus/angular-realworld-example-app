@@ -1,0 +1,352 @@
+{
+  "screen": "home",
+  "journey": "signed-in your feed (demo)",
+  "journeyId": "signed-in-your-feed-demo",
+  "ranAt": "2026-11-12T17:33:14.594Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "signed-in-global-feed",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/signed-in-your-feed-demo--signed-in-global-feed--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/signed-in-your-feed-demo--signed-in-global-feed--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/signed-in-your-feed-demo--signed-in-global-feed--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 2157],
+        "react": [1440, 2157]
+      },
+      "pass": true
+    },
+    {
+      "name": "your-feed",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/signed-in-your-feed-demo--your-feed--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/signed-in-your-feed-demo--your-feed--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/signed-in-your-feed-demo--your-feed--diff.png",
+      "pct": 0.0027043733580590324,
+      "differing": 84,
+      "size": {
+        "angular": [1440, 2157],
+        "react": [1440, 2157]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/feed",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/feed",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "global.url": "/",
+      "global.bannerVisible": false,
+      "global.tabs": [
+        {
+          "text": "Your Feed",
+          "active": false
+        },
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": [],
+      "feed.url": "/?feed=following",
+      "feed.bannerVisible": false,
+      "feed.tabs": [
+        {
+          "text": "Your Feed",
+          "active": true
+        },
+        {
+          "text": "Global Feed",
+          "active": false
+        }
+      ],
+      "feed.titles": [
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Pagination done right",
+        "Component boundaries that last",
+        "Why we run every test in CI",
+        "Getting started with reactive forms"
+      ],
+      "feed.emptyMessage": [],
+      "feed.pages": ["1"],
+      "feed.activePage": ["1"],
+      "feed.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "feed.sidebarMessages": [],
+      "backend.feedTitles": [
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Pagination done right",
+        "Component boundaries that last",
+        "Why we run every test in CI",
+        "Getting started with reactive forms"
+      ],
+      "backend.feedCount": 10
+    },
+    "react": {
+      "global.url": "/",
+      "global.bannerVisible": false,
+      "global.tabs": [
+        {
+          "text": "Your Feed",
+          "active": false
+        },
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": [],
+      "feed.url": "/?feed=following",
+      "feed.bannerVisible": false,
+      "feed.tabs": [
+        {
+          "text": "Your Feed",
+          "active": true
+        },
+        {
+          "text": "Global Feed",
+          "active": false
+        }
+      ],
+      "feed.titles": [
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Pagination done right",
+        "Component boundaries that last",
+        "Why we run every test in CI",
+        "Getting started with reactive forms"
+      ],
+      "feed.emptyMessage": [],
+      "feed.pages": ["1"],
+      "feed.activePage": ["1"],
+      "feed.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "feed.sidebarMessages": [],
+      "backend.feedTitles": [
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Pagination done right",
+        "Component boundaries that last",
+        "Why we run every test in CI",
+        "Getting started with reactive forms"
+      ],
+      "backend.feedCount": 10
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/signed-in-your-feed-demo--react.webm"
+}

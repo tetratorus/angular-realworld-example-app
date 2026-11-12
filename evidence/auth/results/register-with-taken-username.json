@@ -1,0 +1,140 @@
+{
+  "screen": "auth",
+  "journey": "register with taken username",
+  "journeyId": "register-with-taken-username",
+  "ranAt": "2026-11-12T17:32:05.084Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "username-taken",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-with-taken-username--username-taken--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-with-taken-username--username-taken--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/register-with-taken-username--username-taken--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "email-taken",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-with-taken-username--email-taken--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-with-taken-username--email-taken--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/register-with-taken-username--email-taken--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "another@conduit.test",
+            "password": "password123",
+            "username": "alice"
+          }
+        },
+        "status": 409
+      },
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "bob@conduit.test",
+            "password": "password123",
+            "username": "someoneelse"
+          }
+        },
+        "status": 409
+      }
+    ],
+    "react": [
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "another@conduit.test",
+            "password": "password123",
+            "username": "alice"
+          }
+        },
+        "status": 409
+      },
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "bob@conduit.test",
+            "password": "password123",
+            "username": "someoneelse"
+          }
+        },
+        "status": 409
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "taken.url": "/register",
+      "taken.title": "Sign up",
+      "taken.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "taken.inputs": ["Username", "Email", "Password"],
+      "taken.errors": ["username has already been taken"],
+      "taken.buttonText": "Sign up",
+      "taken.buttonDisabled": false,
+      "taken.signedIn": false,
+      "taken.anotherProfile": {
+        "profile": ["not found"]
+      },
+      "emailTaken.errors": ["email has already been taken"]
+    },
+    "react": {
+      "taken.url": "/register",
+      "taken.title": "Sign up",
+      "taken.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "taken.inputs": ["Username", "Email", "Password"],
+      "taken.errors": ["username has already been taken"],
+      "taken.buttonText": "Sign up",
+      "taken.buttonDisabled": false,
+      "taken.signedIn": false,
+      "taken.anotherProfile": {
+        "profile": ["not found"]
+      },
+      "emailTaken.errors": ["email has already been taken"]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/register-with-taken-username--react.webm"
+}

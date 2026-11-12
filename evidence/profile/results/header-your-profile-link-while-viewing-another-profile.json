@@ -1,0 +1,161 @@
+{
+  "screen": "profile",
+  "journey": "header Your profile link while viewing another profile",
+  "journeyId": "header-your-profile-link-while-viewing-another-profile",
+  "ranAt": "2026-11-12T17:33:45.266Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "after-header-profile-link",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/header-your-profile-link-while-viewing-another-profile--after-header-profile-link--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/header-your-profile-link-while-viewing-another-profile--after-header-profile-link--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/header-your-profile-link-while-viewing-another-profile--after-header-profile-link--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "afterSwitch.url": "/profile/demo",
+      "afterSwitch.username": "alice",
+      "afterSwitch.bio": "Frontend engineer. Writes about forms and state.",
+      "afterSwitch.image": "http://localhost:3000/avatars/alice.svg",
+      "afterSwitch.actionButtons": ["   Unfollow alice"],
+      "afterSwitch.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "afterSwitch.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "afterSwitch.emptyMessage": [],
+      "afterSwitch.pages": ["1"]
+    },
+    "react": {
+      "afterSwitch.url": "/profile/demo",
+      "afterSwitch.username": "alice",
+      "afterSwitch.bio": "Frontend engineer. Writes about forms and state.",
+      "afterSwitch.image": "http://localhost:3000/avatars/alice.svg",
+      "afterSwitch.actionButtons": ["   Unfollow alice"],
+      "afterSwitch.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "afterSwitch.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "afterSwitch.emptyMessage": [],
+      "afterSwitch.pages": ["1"]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/header-your-profile-link-while-viewing-another-profile--react.webm"
+}

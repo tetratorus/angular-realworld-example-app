@@ -1,0 +1,209 @@
+{
+  "screen": "editor",
+  "journey": "create article with two tags as demo",
+  "journeyId": "create-article-with-two-tags-as-demo",
+  "ranAt": "2026-11-12T17:32:44.007Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "empty-editor",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--empty-editor--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--empty-editor--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/diffs/create-article-with-two-tags-as-demo--empty-editor--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "three-tag-pills",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--three-tag-pills--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--three-tag-pills--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/diffs/create-article-with-two-tags-as-demo--three-tag-pills--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "filled-with-two-tags",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--filled-with-two-tags--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/create-article-with-two-tags-as-demo--filled-with-two-tags--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/diffs/create-article-with-two-tags-as-demo--filled-with-two-tags--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles",
+        "query": {},
+        "body": {
+          "article": {
+            "title": "Parity check from the editor",
+            "description": "Both apps publish the same article",
+            "body": "## Hello\n\nWritten in the **editor** journey.",
+            "tagList": ["migration", "react"]
+          }
+        },
+        "status": 201
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles",
+        "query": {},
+        "body": {
+          "article": {
+            "title": "Parity check from the editor",
+            "description": "Both apps publish the same article",
+            "body": "## Hello\n\nWritten in the **editor** journey.",
+            "tagList": ["migration", "react"]
+          }
+        },
+        "status": 201
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "empty form": {
+        "title": "",
+        "description": "",
+        "body": "",
+        "tagInput": "",
+        "tags": [],
+        "errors": []
+      },
+      "after adding three tags": {
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagInput": "",
+        "tags": ["migration", "react", "temporary"],
+        "errors": []
+      },
+      "before publish": {
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagInput": "",
+        "tags": ["migration", "react"],
+        "errors": []
+      },
+      "url after publish": "/article/parity-check-from-the-editor",
+      "backend article": {
+        "slug": "parity-check-from-the-editor",
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagList": ["migration", "react"],
+        "author": "demo"
+      },
+      "demo article slugs": ["parity-check-from-the-editor"]
+    },
+    "react": {
+      "empty form": {
+        "title": "",
+        "description": "",
+        "body": "",
+        "tagInput": "",
+        "tags": [],
+        "errors": []
+      },
+      "after adding three tags": {
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagInput": "",
+        "tags": ["migration", "react", "temporary"],
+        "errors": []
+      },
+      "before publish": {
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagInput": "",
+        "tags": ["migration", "react"],
+        "errors": []
+      },
+      "url after publish": "/article/parity-check-from-the-editor",
+      "backend article": {
+        "slug": "parity-check-from-the-editor",
+        "title": "Parity check from the editor",
+        "description": "Both apps publish the same article",
+        "body": "## Hello\n\nWritten in the **editor** journey.",
+        "tagList": ["migration", "react"],
+        "author": "demo"
+      },
+      "demo article slugs": ["parity-check-from-the-editor"]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/video/create-article-with-two-tags-as-demo--react.webm"
+}

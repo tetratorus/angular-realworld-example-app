@@ -1,0 +1,37 @@
+{
+  "screen": "settings",
+  "journey": "signed-out settings redirects to login",
+  "journeyId": "signed-out-settings-redirects-to-login",
+  "ranAt": "2026-11-12T17:34:03.857Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [],
+  "apiCalls": {
+    "angular": [],
+    "react": []
+  },
+  "observations": {
+    "angular": {
+      "url": "/login",
+      "settingsFormRendered": 0,
+      "navLinks": ["Home", "Sign in", "Sign up"],
+      "storedToken": null
+    },
+    "react": {
+      "url": "/login",
+      "settingsFormRendered": 0,
+      "navLinks": ["Home", "Sign in", "Sign up"],
+      "storedToken": null
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/video/signed-out-settings-redirects-to-login--react.webm"
+}

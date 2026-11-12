@@ -1,0 +1,189 @@
+{
+  "screen": "auth",
+  "journey": "register a new user",
+  "journeyId": "register-a-new-user",
+  "ranAt": "2026-11-12T17:32:01.090Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "register-form",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--register-form--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--register-form--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/register-a-new-user--register-form--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "register-filled",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--register-filled--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--register-filled--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/register-a-new-user--register-filled--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    },
+    {
+      "name": "home-after-register",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--home-after-register--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/screens/register-a-new-user--home-after-register--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/diffs/register-a-new-user--home-after-register--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "newreader@conduit.test",
+            "password": "password123",
+            "username": "newreader"
+          }
+        },
+        "status": 201
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "POST",
+        "path": "/users",
+        "query": {},
+        "body": {
+          "user": {
+            "email": "newreader@conduit.test",
+            "password": "password123",
+            "username": "newreader"
+          }
+        },
+        "status": 201
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "empty.url": "/register",
+      "empty.title": "Sign up",
+      "empty.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "empty.inputs": ["Username", "Email", "Password"],
+      "empty.errors": [],
+      "empty.buttonText": "Sign up",
+      "empty.buttonDisabled": true,
+      "empty.signedIn": false,
+      "filled.buttonDisabled": false,
+      "after.url": "/",
+      "after.nav": ["Home", "New Article", "Settings", "newreader"],
+      "after.currentUser": {
+        "username": "newreader",
+        "email": "newreader@conduit.test",
+        "bio": null,
+        "image": null
+      },
+      "after.profile": {
+        "profile": {
+          "username": "newreader",
+          "bio": null,
+          "image": null,
+          "following": false
+        }
+      },
+      "after.canLogin": 200
+    },
+    "react": {
+      "empty.url": "/register",
+      "empty.title": "Sign up",
+      "empty.switchLink": {
+        "text": "Have an account?",
+        "href": "/login"
+      },
+      "empty.inputs": ["Username", "Email", "Password"],
+      "empty.errors": [],
+      "empty.buttonText": "Sign up",
+      "empty.buttonDisabled": true,
+      "empty.signedIn": false,
+      "filled.buttonDisabled": false,
+      "after.url": "/",
+      "after.nav": ["Home", "New Article", "Settings", "newreader"],
+      "after.currentUser": {
+        "username": "newreader",
+        "email": "newreader@conduit.test",
+        "bio": null,
+        "image": null
+      },
+      "after.profile": {
+        "profile": {
+          "username": "newreader",
+          "bio": null,
+          "image": null,
+          "following": false
+        }
+      },
+      "after.canLogin": 200
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/auth/video/register-a-new-user--react.webm"
+}

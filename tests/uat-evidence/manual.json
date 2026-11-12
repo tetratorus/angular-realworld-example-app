@@ -1,0 +1,32 @@
+{
+  "UAT-001": {
+    "method": "Computer use: Devin driving Chrome by hand, screen recording on (plus the Playwright run below)",
+    "actual": "Entered demo@conduit.test and password123 in Chrome and clicked Sign in. Landed on Home (/); header displayed demo, New Article and Settings.",
+    "status": "Pass",
+    "evidence": "Recording: demo/recordings/uat-001-005-react-computer-use.mp4\nManual screenshots (4, one per step): tests/uat-evidence/react-manual/"
+  },
+  "UAT-002": {
+    "method": "Computer use: Devin driving Chrome by hand, screen recording on (plus the Playwright run below)",
+    "actual": "Entered demo@conduit.test and wrongpass1 and clicked Sign in. Saw credentials invalid; URL remained /login, and header still showed Sign in and Sign up.",
+    "status": "Pass",
+    "evidence": "Recording: demo/recordings/uat-001-005-react-computer-use.mp4\nManual screenshots (4, one per step): tests/uat-evidence/react-manual/"
+  },
+  "UAT-003": {
+    "method": "Computer use: Devin driving Chrome by hand, screen recording on (plus the Playwright run below)",
+    "actual": "Opened /login with both inputs empty. Sign in was disabled, skipped by keyboard focus, and clicking it had no effect. Supplementary read-only browser inspection confirmed disabled=true, both values empty, no JWT, and no backend API resource requests since reload.",
+    "status": "Pass",
+    "evidence": "Recording: demo/recordings/uat-001-005-react-computer-use.mp4\nManual screenshots (3, one per step): tests/uat-evidence/react-manual/"
+  },
+  "UAT-004": {
+    "method": "Computer use: Devin driving Chrome by hand, screen recording on (plus the Playwright run below)",
+    "actual": "Scrolled through Global Feed and counted 10 articles dated October 22 through October 13, 2026 in descending order. Clicked page 2; URL became /?page=2 and feed changed to 10 different articles dated October 12 through October 3 in descending order. Scrolled through all results and confirmed page 2 highlighted.",
+    "status": "Pass",
+    "evidence": "Recording: demo/recordings/uat-001-005-react-computer-use.mp4\nManual screenshots (4, one per step): tests/uat-evidence/react-manual/"
+  },
+  "UAT-005": {
+    "method": "Computer use: Devin driving Chrome by hand, screen recording on (plus the Playwright run below)",
+    "actual": "Opened Home signed out and clicked testing in Popular Tags. URL became /tag/testing and # testing tab was active. Scrolled through all five results: Screenshots as evidence, Negative tests matter, Regression suites that stay green, Writing test cases people can run, and Why we run every test in CI. Each displayed the testing tag.",
+    "status": "Pass",
+    "evidence": "Recording: demo/recordings/uat-001-005-react-computer-use.mp4\nManual screenshots (3, one per step): tests/uat-evidence/react-manual/"
+  }
+}

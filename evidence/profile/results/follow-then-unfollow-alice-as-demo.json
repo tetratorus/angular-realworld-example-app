@@ -1,0 +1,262 @@
+{
+  "screen": "profile",
+  "journey": "follow then unfollow alice as demo",
+  "journeyId": "follow-then-unfollow-alice-as-demo",
+  "ranAt": "2026-11-12T17:33:32.831Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "following-initially",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--following-initially--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--following-initially--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/follow-then-unfollow-alice-as-demo--following-initially--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    },
+    {
+      "name": "after-unfollow",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-unfollow--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-unfollow--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/follow-then-unfollow-alice-as-demo--after-unfollow--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    },
+    {
+      "name": "after-follow",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-follow--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-follow--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/follow-then-unfollow-alice-as-demo--after-follow--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    },
+    {
+      "name": "after-second-unfollow",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-second-unfollow--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/follow-then-unfollow-alice-as-demo--after-second-unfollow--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/follow-then-unfollow-alice-as-demo--after-second-unfollow--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": {},
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": {},
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/profiles/alice/follow",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "initial.url": "/profile/alice",
+      "initial.username": "alice",
+      "initial.bio": "Frontend engineer. Writes about forms and state.",
+      "initial.image": "http://localhost:3000/avatars/alice.svg",
+      "initial.actionButtons": ["   Unfollow alice"],
+      "initial.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "initial.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "initial.emptyMessage": [],
+      "initial.pages": ["1"],
+      "initial.backendFollowing": true,
+      "afterUnfollow.button": "   Follow alice",
+      "afterUnfollow.buttonClass": "btn btn-sm action-btn btn-outline-secondary",
+      "afterUnfollow.backendFollowing": false,
+      "afterFollow.button": "   Unfollow alice",
+      "afterFollow.buttonClass": "btn btn-sm action-btn btn-secondary",
+      "afterFollow.backendFollowing": true,
+      "afterSecondUnfollow.button": "   Follow alice",
+      "afterSecondUnfollow.backendFollowing": false,
+      "afterSecondUnfollow.demoFeedAuthors": ["bob"]
+    },
+    "react": {
+      "initial.url": "/profile/alice",
+      "initial.username": "alice",
+      "initial.bio": "Frontend engineer. Writes about forms and state.",
+      "initial.image": "http://localhost:3000/avatars/alice.svg",
+      "initial.actionButtons": ["   Unfollow alice"],
+      "initial.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "initial.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "initial.emptyMessage": [],
+      "initial.pages": ["1"],
+      "initial.backendFollowing": true,
+      "afterUnfollow.button": "   Follow alice",
+      "afterUnfollow.buttonClass": "btn btn-sm action-btn btn-outline-secondary",
+      "afterUnfollow.backendFollowing": false,
+      "afterFollow.button": "   Unfollow alice",
+      "afterFollow.buttonClass": "btn btn-sm action-btn btn-secondary",
+      "afterFollow.backendFollowing": true,
+      "afterSecondUnfollow.button": "   Follow alice",
+      "afterSecondUnfollow.backendFollowing": false,
+      "afterSecondUnfollow.demoFeedAuthors": ["bob"]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/follow-then-unfollow-alice-as-demo--react.webm"
+}
