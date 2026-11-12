@@ -43,7 +43,7 @@ Devin board: **not used**. The board tool wasn't available to the parent session
 ## Run it locally
 
 ```bash
-bun run setup && (cd react-app && npm install)
+bun run setup && (cd react-app && bun install)
 node mock-api/server.mjs                 # http://localhost:3000/api   (POST /api/__reset restores the seed)
 bun run start                            # Angular  http://localhost:4200
 (cd react-app && npm run dev)            # React    http://localhost:5173
