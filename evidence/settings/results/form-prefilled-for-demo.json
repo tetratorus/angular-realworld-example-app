@@ -1,0 +1,83 @@
+{
+  "screen": "settings",
+  "journey": "form prefilled for demo",
+  "journeyId": "form-prefilled-for-demo",
+  "ranAt": "2026-11-12T17:21:13.647Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "settings-form-prefilled",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/form-prefilled-for-demo--settings-form-prefilled--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/form-prefilled-for-demo--settings-form-prefilled--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/diffs/form-prefilled-for-demo--settings-form-prefilled--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/settings",
+      "heading": "Your Settings",
+      "formValues": {
+        "image": "",
+        "username": "demo",
+        "bio": "Demo account used by the test scenarios.",
+        "email": "demo@conduit.test",
+        "password": ""
+      },
+      "placeholders": ["URL of profile picture", "Username", "Short bio about you", "Email", "New Password"],
+      "buttons": ["Update Settings", "Or click here to logout."],
+      "errors": []
+    },
+    "react": {
+      "url": "/settings",
+      "heading": "Your Settings",
+      "formValues": {
+        "image": "",
+        "username": "demo",
+        "bio": "Demo account used by the test scenarios.",
+        "email": "demo@conduit.test",
+        "password": ""
+      },
+      "placeholders": ["URL of profile picture", "Username", "Short bio about you", "Email", "New Password"],
+      "buttons": ["Update Settings", "Or click here to logout."],
+      "errors": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/video/form-prefilled-for-demo--react.webm"
+}
