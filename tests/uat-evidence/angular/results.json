@@ -1,0 +1,289 @@
+{
+  "UAT-001": {
+    "status": "Pass",
+    "actual": "Landed on /; header: Home New Article Settings demo",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-001/step-01.png",
+      "tests/uat-evidence/angular/UAT-001/step-02.png",
+      "tests/uat-evidence/angular/UAT-001/step-03.png",
+      "tests/uat-evidence/angular/UAT-001/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-001/video.webm",
+    "ranAt": "2026-11-12T17:16:51.568Z",
+    "app": "angular"
+  },
+  "UAT-002": {
+    "status": "Pass",
+    "actual": "Error shown: \"credentials invalid\"; still on /login, signed out",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-002/step-01.png",
+      "tests/uat-evidence/angular/UAT-002/step-02.png",
+      "tests/uat-evidence/angular/UAT-002/step-03.png",
+      "tests/uat-evidence/angular/UAT-002/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-002/video.webm",
+    "ranAt": "2026-11-12T17:16:53.161Z",
+    "app": "angular"
+  },
+  "UAT-003": {
+    "status": "Pass",
+    "actual": "'Sign in' button disabled; 0 login requests sent",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-003/step-01.png",
+      "tests/uat-evidence/angular/UAT-003/step-02.png",
+      "tests/uat-evidence/angular/UAT-003/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-003/video.webm",
+    "ranAt": "2026-11-12T17:16:54.485Z",
+    "app": "angular"
+  },
+  "UAT-004": {
+    "status": "Pass",
+    "actual": "Page 1 first: \"Screenshots as evidence\"; page 2 shows 10 different articles starting \"Regression suites that stay green\"; page 2 active",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-004/step-01.png",
+      "tests/uat-evidence/angular/UAT-004/step-02.png",
+      "tests/uat-evidence/angular/UAT-004/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-004/video.webm",
+    "ranAt": "2026-11-12T17:16:55.837Z",
+    "app": "angular"
+  },
+  "UAT-005": {
+    "status": "Pass",
+    "actual": "URL /tag/testing; active tab \"testing\"; 5 articles, all tagged testing",
+    "screenshots": ["tests/uat-evidence/angular/UAT-005/step-01.png", "tests/uat-evidence/angular/UAT-005/step-02.png"],
+    "video": "tests/uat-evidence/angular/UAT-005/video.webm",
+    "ranAt": "2026-11-12T17:16:57.112Z",
+    "app": "angular"
+  },
+  "UAT-006": {
+    "status": "Pass",
+    "actual": "Landed on Home signed in as newuser1",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-006/step-01.png",
+      "tests/uat-evidence/angular/UAT-006/step-02.png",
+      "tests/uat-evidence/angular/UAT-006/step-03.png",
+      "tests/uat-evidence/angular/UAT-006/step-04.png",
+      "tests/uat-evidence/angular/UAT-006/step-05.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-006/video.webm",
+    "ranAt": "2026-11-12T17:16:58.926Z",
+    "app": "angular"
+  },
+  "UAT-007": {
+    "status": "Pass",
+    "actual": "Error shown: \"username has already been taken\"; still on /register",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-007/step-01.png",
+      "tests/uat-evidence/angular/UAT-007/step-02.png",
+      "tests/uat-evidence/angular/UAT-007/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-007/video.webm",
+    "ranAt": "2026-11-12T17:17:00.627Z",
+    "app": "angular"
+  },
+  "UAT-008": {
+    "status": "Pass",
+    "actual": "Redirected to /login",
+    "screenshots": ["tests/uat-evidence/angular/UAT-008/step-01.png"],
+    "video": "tests/uat-evidence/angular/UAT-008/video.webm",
+    "ranAt": "2026-11-12T17:17:01.685Z",
+    "app": "angular"
+  },
+  "UAT-009": {
+    "status": "Pass",
+    "actual": "Redirected to /login",
+    "screenshots": ["tests/uat-evidence/angular/UAT-009/step-01.png"],
+    "video": "tests/uat-evidence/angular/UAT-009/video.webm",
+    "ranAt": "2026-11-12T17:17:02.773Z",
+    "app": "angular"
+  },
+  "UAT-010": {
+    "status": "Pass",
+    "actual": "Your Feed authors: alice, bob",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-010/step-01.png",
+      "tests/uat-evidence/angular/UAT-010/step-02.png",
+      "tests/uat-evidence/angular/UAT-010/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-010/video.webm",
+    "ranAt": "2026-11-12T17:17:04.778Z",
+    "app": "angular"
+  },
+  "UAT-011": {
+    "status": "Pass",
+    "actual": "Title shown; author alice; tags forms, angular; Markdown rendered; 3 comments",
+    "screenshots": ["tests/uat-evidence/angular/UAT-011/step-01.png"],
+    "video": "tests/uat-evidence/angular/UAT-011/video.webm",
+    "ranAt": "2026-11-12T17:17:05.920Z",
+    "app": "angular"
+  },
+  "UAT-012": {
+    "status": "Pass",
+    "actual": "\"Favorite Article (0)\" → \"Unfavorite Article (1)\" → \"Favorite Article (0)\"",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-012/step-01.png",
+      "tests/uat-evidence/angular/UAT-012/step-02.png",
+      "tests/uat-evidence/angular/UAT-012/step-03.png",
+      "tests/uat-evidence/angular/UAT-012/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-012/video.webm",
+    "ranAt": "2026-11-12T17:17:08.216Z",
+    "app": "angular"
+  },
+  "UAT-013": {
+    "status": "Pass",
+    "actual": "Button now 'Unfollow carol'; feed authors: alice, bob, carol",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-013/step-01.png",
+      "tests/uat-evidence/angular/UAT-013/step-02.png",
+      "tests/uat-evidence/angular/UAT-013/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-013/video.webm",
+    "ranAt": "2026-11-12T17:17:10.403Z",
+    "app": "angular"
+  },
+  "UAT-014": {
+    "status": "Pass",
+    "actual": "Comment \"Great write-up\" at top of list, author demo",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-014/step-01.png",
+      "tests/uat-evidence/angular/UAT-014/step-02.png",
+      "tests/uat-evidence/angular/UAT-014/step-03.png",
+      "tests/uat-evidence/angular/UAT-014/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-014/video.webm",
+    "ranAt": "2026-11-12T17:17:12.618Z",
+    "app": "angular"
+  },
+  "UAT-015": {
+    "status": "Pass",
+    "actual": "1 trash icon (own comment only); after delete 2 comments remain, none by demo",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-015/step-01.png",
+      "tests/uat-evidence/angular/UAT-015/step-02.png",
+      "tests/uat-evidence/angular/UAT-015/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-015/video.webm",
+    "ranAt": "2026-11-12T17:17:14.683Z",
+    "app": "angular"
+  },
+  "UAT-016": {
+    "status": "Pass",
+    "actual": "No comment form; prompt \"Sign in or sign up to add comments on this article.\" shown",
+    "screenshots": ["tests/uat-evidence/angular/UAT-016/step-01.png"],
+    "video": "tests/uat-evidence/angular/UAT-016/video.webm",
+    "ranAt": "2026-11-12T17:17:15.876Z",
+    "app": "angular"
+  },
+  "UAT-017": {
+    "status": "Pass",
+    "actual": "On /article/uat-article; title, bold body and tags uat, demo shown",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-017/step-01.png",
+      "tests/uat-evidence/angular/UAT-017/step-02.png",
+      "tests/uat-evidence/angular/UAT-017/step-03.png",
+      "tests/uat-evidence/angular/UAT-017/step-04.png",
+      "tests/uat-evidence/angular/UAT-017/step-05.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-017/video.webm",
+    "ranAt": "2026-11-12T17:17:18.933Z",
+    "app": "angular"
+  },
+  "UAT-018": {
+    "status": "Pass",
+    "actual": "Error shown: \"title can't be blank\"; article count unchanged (22)",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-018/step-01.png",
+      "tests/uat-evidence/angular/UAT-018/step-02.png",
+      "tests/uat-evidence/angular/UAT-018/step-03.png",
+      "tests/uat-evidence/angular/UAT-018/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-018/video.webm",
+    "ranAt": "2026-11-12T17:17:21.599Z",
+    "app": "angular"
+  },
+  "UAT-019": {
+    "status": "Pass",
+    "actual": "Redirected to /; editor not shown",
+    "screenshots": ["tests/uat-evidence/angular/UAT-019/step-01.png", "tests/uat-evidence/angular/UAT-019/step-02.png"],
+    "video": "tests/uat-evidence/angular/UAT-019/video.webm",
+    "ranAt": "2026-11-12T17:17:23.757Z",
+    "app": "angular"
+  },
+  "UAT-020": {
+    "status": "Pass",
+    "actual": "Description saved as \"Edited by UAT\"; after delete on Home, GET article → 404",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-020/step-01.png",
+      "tests/uat-evidence/angular/UAT-020/step-02.png",
+      "tests/uat-evidence/angular/UAT-020/step-03.png",
+      "tests/uat-evidence/angular/UAT-020/step-04.png",
+      "tests/uat-evidence/angular/UAT-020/step-05.png",
+      "tests/uat-evidence/angular/UAT-020/step-06.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-020/video.webm",
+    "ranAt": "2026-11-12T17:17:26.830Z",
+    "app": "angular"
+  },
+  "UAT-021": {
+    "status": "Pass",
+    "actual": "Image and bio \"Frontend engineer. Writes about forms and state.\" shown; My Posts active; 5 articles, all by alice",
+    "screenshots": ["tests/uat-evidence/angular/UAT-021/step-01.png"],
+    "video": "tests/uat-evidence/angular/UAT-021/video.webm",
+    "ranAt": "2026-11-12T17:17:27.963Z",
+    "app": "angular"
+  },
+  "UAT-022": {
+    "status": "Pass",
+    "actual": "\"Follow carol\" → \"Unfollow carol\" → \"Follow carol\"",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-022/step-01.png",
+      "tests/uat-evidence/angular/UAT-022/step-02.png",
+      "tests/uat-evidence/angular/UAT-022/step-03.png",
+      "tests/uat-evidence/angular/UAT-022/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-022/video.webm",
+    "ranAt": "2026-11-12T17:17:30.454Z",
+    "app": "angular"
+  },
+  "UAT-023": {
+    "status": "Pass",
+    "actual": "Landed on /profile/demo; bio shows \"Updated by UAT\"",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-023/step-01.png",
+      "tests/uat-evidence/angular/UAT-023/step-02.png",
+      "tests/uat-evidence/angular/UAT-023/step-03.png",
+      "tests/uat-evidence/angular/UAT-023/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-023/video.webm",
+    "ranAt": "2026-11-12T17:17:32.263Z",
+    "app": "angular"
+  },
+  "UAT-024": {
+    "status": "Pass",
+    "actual": "Error shown: \"email is invalid\"; still on /settings",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-024/step-01.png",
+      "tests/uat-evidence/angular/UAT-024/step-02.png",
+      "tests/uat-evidence/angular/UAT-024/step-03.png",
+      "tests/uat-evidence/angular/UAT-024/step-04.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-024/video.webm",
+    "ranAt": "2026-11-12T17:17:34.413Z",
+    "app": "angular"
+  },
+  "UAT-025": {
+    "status": "Pass",
+    "actual": "On Home, signed out; header: Home Sign in Sign up",
+    "screenshots": [
+      "tests/uat-evidence/angular/UAT-025/step-01.png",
+      "tests/uat-evidence/angular/UAT-025/step-02.png",
+      "tests/uat-evidence/angular/UAT-025/step-03.png"
+    ],
+    "video": "tests/uat-evidence/angular/UAT-025/video.webm",
+    "ranAt": "2026-11-12T17:17:36.368Z",
+    "app": "angular"
+  }
+}
