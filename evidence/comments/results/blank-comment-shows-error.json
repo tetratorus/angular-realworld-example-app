@@ -1,0 +1,178 @@
+{
+  "screen": "comments",
+  "journey": "blank comment shows error",
+  "journeyId": "blank-comment-shows-error",
+  "ranAt": "2026-11-12T17:18:14.882Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "blank-comment-error",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/blank-comment-shows-error--blank-comment-error--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/blank-comment-shows-error--blank-comment-error--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/blank-comment-shows-error--blank-comment-error--diff.png",
+      "pct": 0.03134345525649873,
+      "differing": 654,
+      "size": {
+        "angular": [1440, 1449],
+        "react": [1440, 1449]
+      },
+      "pass": true
+    },
+    {
+      "name": "error-cleared-after-valid-comment",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/blank-comment-shows-error--error-cleared-after-valid-comment--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/blank-comment-shows-error--error-cleared-after-valid-comment--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/blank-comment-shows-error--error-cleared-after-valid-comment--diff.png",
+      "pct": 0.02926331615120275,
+      "differing": 654,
+      "size": {
+        "angular": [1440, 1552],
+        "react": [1440, 1552]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": ""
+          }
+        },
+        "status": 422
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": "Now with text."
+          }
+        },
+        "status": 201
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": ""
+          }
+        },
+        "status": 422
+      },
+      {
+        "method": "POST",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": {
+          "comment": {
+            "body": "Now with text."
+          }
+        },
+        "status": 201
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "error items": ["body can't be blank"],
+      "comment count on screen": 3,
+      "backend comments": [
+        {
+          "author": "demo",
+          "body": "Bookmarking this for the team."
+        },
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ],
+      "error items after valid post": []
+    },
+    "react": {
+      "error items": ["body can't be blank"],
+      "comment count on screen": 3,
+      "backend comments": [
+        {
+          "author": "demo",
+          "body": "Bookmarking this for the team."
+        },
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ],
+      "error items after valid post": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/video/blank-comment-shows-error--react.webm"
+}

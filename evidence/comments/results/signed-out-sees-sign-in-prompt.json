@@ -1,0 +1,163 @@
+{
+  "screen": "comments",
+  "journey": "signed out sees sign-in prompt",
+  "journeyId": "signed-out-sees-sign-in-prompt",
+  "ranAt": "2026-11-12T17:18:04.722Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "signed-out-comments",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/signed-out-sees-sign-in-prompt--signed-out-comments--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/signed-out-sees-sign-in-prompt--signed-out-comments--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/signed-out-sees-sign-in-prompt--signed-out-comments--diff.png",
+      "pct": 0.03564887493458922,
+      "differing": 654,
+      "size": {
+        "angular": [1440, 1274],
+        "react": [1440, 1274]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "comment form count": 0,
+      "prompt text": "Sign in or sign up to add comments on this article.",
+      "prompt links": [
+        ["Sign in", "/login"],
+        ["sign up", "/register"]
+      ],
+      "comments on screen": [
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        }
+      ],
+      "url after Sign in": "/login",
+      "url after sign up": "/register"
+    },
+    "react": {
+      "comment form count": 0,
+      "prompt text": "Sign in or sign up to add comments on this article.",
+      "prompt links": [
+        ["Sign in", "/login"],
+        ["sign up", "/register"]
+      ],
+      "comments on screen": [
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        }
+      ],
+      "url after Sign in": "/login",
+      "url after sign up": "/register"
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/video/signed-out-sees-sign-in-prompt--react.webm"
+}

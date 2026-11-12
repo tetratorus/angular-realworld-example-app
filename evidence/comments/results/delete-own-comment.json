@@ -1,0 +1,170 @@
+{
+  "screen": "comments",
+  "journey": "delete own comment",
+  "journeyId": "delete-own-comment",
+  "ranAt": "2026-11-12T17:18:19.323Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "before-delete",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--before-delete--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--before-delete--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/delete-own-comment--before-delete--diff.png",
+      "pct": 0.031871345029239766,
+      "differing": 654,
+      "size": {
+        "angular": [1440, 1425],
+        "react": [1440, 1425]
+      },
+      "pass": true
+    },
+    {
+      "name": "after-delete",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--after-delete--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/delete-own-comment--after-delete--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/delete-own-comment--after-delete--diff.png",
+      "pct": 0.03498972778633796,
+      "differing": 654,
+      "size": {
+        "angular": [1440, 1298],
+        "react": [1440, 1298]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/getting-started-with-reactive-forms/comments/3",
+        "query": {},
+        "body": null,
+        "status": 204
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/getting-started-with-reactive-forms/comments/3",
+        "query": {},
+        "body": null,
+        "status": 204
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "comments on screen": [
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        }
+      ],
+      "error items": [],
+      "backend comments": [
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ],
+      "url": "/article/getting-started-with-reactive-forms"
+    },
+    "react": {
+      "comments on screen": [
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        }
+      ],
+      "error items": [],
+      "backend comments": [
+        {
+          "author": "carol",
+          "body": "The validation section helped a lot."
+        },
+        {
+          "author": "bob",
+          "body": "Clear and practical, thanks."
+        }
+      ],
+      "url": "/article/getting-started-with-reactive-forms"
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/video/delete-own-comment--react.webm"
+}
