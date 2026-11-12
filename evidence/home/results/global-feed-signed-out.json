@@ -1,0 +1,199 @@
+{
+  "screen": "home",
+  "journey": "global feed signed out",
+  "journeyId": "global-feed-signed-out",
+  "ranAt": "2026-11-12T17:19:57.372Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "global-feed",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/global-feed-signed-out--global-feed--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/global-feed-signed-out--global-feed--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/global-feed-signed-out--global-feed--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 2349],
+        "react": [1440, 2349]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "global.url": "/",
+      "global.bannerVisible": true,
+      "global.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": [],
+      "global.yourFeedTabCount": 0,
+      "backend.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "backend.articlesCount": 22
+    },
+    "react": {
+      "global.url": "/",
+      "global.bannerVisible": true,
+      "global.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": [],
+      "global.yourFeedTabCount": 0,
+      "backend.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "backend.articlesCount": 22
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/global-feed-signed-out--react.webm"
+}

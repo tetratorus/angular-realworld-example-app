@@ -1,0 +1,298 @@
+{
+  "screen": "home",
+  "journey": "tag url loaded directly",
+  "journeyId": "tag-url-loaded-directly",
+  "ranAt": "2026-11-12T17:20:14.830Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "tag-design",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/tag-url-loaded-directly--tag-design--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/tag-url-loaded-directly--tag-design--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/tag-url-loaded-directly--tag-design--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1418],
+        "react": [1440, 1418]
+      },
+      "pass": true
+    },
+    {
+      "name": "tag-ux",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/tag-url-loaded-directly--tag-ux--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/tag-url-loaded-directly--tag-ux--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/tag-url-loaded-directly--tag-ux--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1045],
+        "react": [1440, 1045]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "design"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "ux"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "design"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "ux"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "tag.url": "/tag/design",
+      "tag.bannerVisible": true,
+      "tag.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "design",
+          "active": true
+        }
+      ],
+      "tag.titles": [
+        "Settings pages people understand",
+        "Typography for long reads",
+        "Colour, contrast and buttons",
+        "Component boundaries that last",
+        "Designing an empty state"
+      ],
+      "tag.emptyMessage": [],
+      "tag.pages": ["1"],
+      "tag.activePage": ["1"],
+      "tag.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag.sidebarMessages": [],
+      "backend.tagTitles": [
+        "Settings pages people understand",
+        "Typography for long reads",
+        "Colour, contrast and buttons",
+        "Component boundaries that last",
+        "Designing an empty state"
+      ],
+      "tag2.url": "/tag/ux",
+      "tag2.bannerVisible": true,
+      "tag2.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "ux",
+          "active": true
+        }
+      ],
+      "tag2.titles": ["Error messages that help", "Typography for long reads", "Designing an empty state"],
+      "tag2.emptyMessage": [],
+      "tag2.pages": ["1"],
+      "tag2.activePage": ["1"],
+      "tag2.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag2.sidebarMessages": []
+    },
+    "react": {
+      "tag.url": "/tag/design",
+      "tag.bannerVisible": true,
+      "tag.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "design",
+          "active": true
+        }
+      ],
+      "tag.titles": [
+        "Settings pages people understand",
+        "Typography for long reads",
+        "Colour, contrast and buttons",
+        "Component boundaries that last",
+        "Designing an empty state"
+      ],
+      "tag.emptyMessage": [],
+      "tag.pages": ["1"],
+      "tag.activePage": ["1"],
+      "tag.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag.sidebarMessages": [],
+      "backend.tagTitles": [
+        "Settings pages people understand",
+        "Typography for long reads",
+        "Colour, contrast and buttons",
+        "Component boundaries that last",
+        "Designing an empty state"
+      ],
+      "tag2.url": "/tag/ux",
+      "tag2.bannerVisible": true,
+      "tag2.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "ux",
+          "active": true
+        }
+      ],
+      "tag2.titles": ["Error messages that help", "Typography for long reads", "Designing an empty state"],
+      "tag2.emptyMessage": [],
+      "tag2.pages": ["1"],
+      "tag2.activePage": ["1"],
+      "tag2.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag2.sidebarMessages": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/tag-url-loaded-directly--react.webm"
+}

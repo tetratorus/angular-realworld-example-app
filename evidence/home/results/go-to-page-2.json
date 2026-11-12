@@ -1,0 +1,380 @@
+{
+  "screen": "home",
+  "journey": "go to page 2",
+  "journeyId": "go-to-page-2",
+  "ranAt": "2026-11-12T17:20:01.927Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "page-2",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/go-to-page-2--page-2--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/go-to-page-2--page-2--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/go-to-page-2--page-2--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 2349],
+        "react": [1440, 2349]
+      },
+      "pass": true
+    },
+    {
+      "name": "back-to-page-1",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/go-to-page-2--back-to-page-1--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/go-to-page-2--back-to-page-1--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/go-to-page-2--back-to-page-1--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 2349],
+        "react": [1440, 2349]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "10"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "10"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "10"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "10"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "page2.url": "/?page=2",
+      "page2.bannerVisible": true,
+      "page2.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "page2.titles": [
+        "Regression suites that stay green",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Tokens, sessions and logout",
+        "Colour, contrast and buttons",
+        "Pagination done right",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Routing without surprises",
+        "Designing an empty state"
+      ],
+      "page2.emptyMessage": [],
+      "page2.pages": ["1", "2", "3"],
+      "page2.activePage": ["2"],
+      "page2.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "page2.sidebarMessages": [],
+      "backend.page2Titles": [
+        "Regression suites that stay green",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Tokens, sessions and logout",
+        "Colour, contrast and buttons",
+        "Pagination done right",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Routing without surprises",
+        "Designing an empty state"
+      ],
+      "page1.url": "/",
+      "page1.bannerVisible": true,
+      "page1.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "page1.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "page1.emptyMessage": [],
+      "page1.pages": ["1", "2", "3"],
+      "page1.activePage": ["1"],
+      "page1.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "page1.sidebarMessages": []
+    },
+    "react": {
+      "page2.url": "/?page=2",
+      "page2.bannerVisible": true,
+      "page2.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "page2.titles": [
+        "Regression suites that stay green",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Tokens, sessions and logout",
+        "Colour, contrast and buttons",
+        "Pagination done right",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Routing without surprises",
+        "Designing an empty state"
+      ],
+      "page2.emptyMessage": [],
+      "page2.pages": ["1", "2", "3"],
+      "page2.activePage": ["2"],
+      "page2.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "page2.sidebarMessages": [],
+      "backend.page2Titles": [
+        "Regression suites that stay green",
+        "Release notes nobody skips",
+        "Markdown in the browser",
+        "Tokens, sessions and logout",
+        "Colour, contrast and buttons",
+        "Pagination done right",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Routing without surprises",
+        "Designing an empty state"
+      ],
+      "page1.url": "/",
+      "page1.bannerVisible": true,
+      "page1.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "page1.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "page1.emptyMessage": [],
+      "page1.pages": ["1", "2", "3"],
+      "page1.activePage": ["1"],
+      "page1.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "page1.sidebarMessages": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/go-to-page-2--react.webm"
+}
