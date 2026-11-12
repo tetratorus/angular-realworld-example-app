@@ -1,0 +1,174 @@
+{
+  "screen": "article",
+  "journey": "delete own article redirects home",
+  "journeyId": "delete-own-article-redirects-home",
+  "ranAt": "2026-11-12T17:21:11.343Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "before-delete",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/delete-own-article-redirects-home--before-delete--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/delete-own-article-redirects-home--before-delete--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/delete-own-article-redirects-home--before-delete--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1049],
+        "react": [1440, 1049]
+      },
+      "pass": true
+    },
+    {
+      "name": "home-after-delete",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/delete-own-article-redirects-home--home-after-delete--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/delete-own-article-redirects-home--home-after-delete--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/delete-own-article-redirects-home--home-after-delete--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 2157],
+        "react": [1440, 2157]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/markdown-in-the-browser",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/markdown-in-the-browser/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/markdown-in-the-browser",
+        "query": {},
+        "body": null,
+        "status": 204
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/markdown-in-the-browser",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/markdown-in-the-browser/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/markdown-in-the-browser",
+        "query": {},
+        "body": null,
+        "status": 204
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "afterDelete.url": "/",
+      "afterDelete.homeHasDeletedArticle": false,
+      "backend.articleAfterDelete": {
+        "errors": {
+          "article": ["not found"]
+        }
+      },
+      "backend.aliceArticles": [
+        "state-that-survives-a-refresh",
+        "migrating-a-screen-at-a-time",
+        "component-boundaries-that-last",
+        "getting-started-with-reactive-forms"
+      ]
+    },
+    "react": {
+      "afterDelete.url": "/",
+      "afterDelete.homeHasDeletedArticle": false,
+      "backend.articleAfterDelete": {
+        "errors": {
+          "article": ["not found"]
+        }
+      },
+      "backend.aliceArticles": [
+        "state-that-survives-a-refresh",
+        "migrating-a-screen-at-a-time",
+        "component-boundaries-that-last",
+        "getting-started-with-reactive-forms"
+      ]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/video/delete-own-article-redirects-home--react.webm"
+}
