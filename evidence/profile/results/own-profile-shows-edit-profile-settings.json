@@ -1,0 +1,155 @@
+{
+  "screen": "profile",
+  "journey": "own profile shows Edit Profile Settings",
+  "journeyId": "own-profile-shows-edit-profile-settings",
+  "ranAt": "2026-11-12T17:19:53.261Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "own-profile",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/own-profile-shows-edit-profile-settings--own-profile--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/own-profile-shows-edit-profile-settings--own-profile--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/own-profile-shows-edit-profile-settings--own-profile--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "own.url": "/profile/demo",
+      "own.username": "demo",
+      "own.bio": "Demo account used by the test scenarios.",
+      "own.image": "/assets/default-avatar.svg",
+      "own.actionButtons": [" Edit Profile Settings"],
+      "own.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/demo",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/demo/favorites",
+          "active": false
+        }
+      ],
+      "own.articleTitles": [],
+      "own.emptyMessage": ["No articles are here... yet."],
+      "own.pages": [],
+      "editLink.href": "/settings",
+      "editLink.class": "btn btn-sm btn-outline-secondary action-btn",
+      "followButtonCount": 0
+    },
+    "react": {
+      "own.url": "/profile/demo",
+      "own.username": "demo",
+      "own.bio": "Demo account used by the test scenarios.",
+      "own.image": "/assets/default-avatar.svg",
+      "own.actionButtons": [" Edit Profile Settings"],
+      "own.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/demo",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/demo/favorites",
+          "active": false
+        }
+      ],
+      "own.articleTitles": [],
+      "own.emptyMessage": ["No articles are here... yet."],
+      "own.pages": [],
+      "editLink.href": "/settings",
+      "editLink.class": "btn btn-sm btn-outline-secondary action-btn",
+      "followButtonCount": 0
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/own-profile-shows-edit-profile-settings--react.webm"
+}
