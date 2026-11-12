@@ -36,7 +36,12 @@ export default function FavoriteButton({
     );
   };
 
-  const classes = ['btn', 'btn-sm', isSubmitting && 'disabled', article.favorited ? 'btn-primary' : 'btn-outline-primary']
+  const classes = [
+    'btn',
+    'btn-sm',
+    isSubmitting && 'disabled',
+    article.favorited ? 'btn-primary' : 'btn-outline-primary',
+  ]
     .filter(Boolean)
     .join(' ');
   const button = (

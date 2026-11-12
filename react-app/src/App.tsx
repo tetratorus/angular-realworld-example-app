@@ -3,17 +3,14 @@ import { useAuth } from './auth/AuthContext';
 import { RequireAuth, RequireGuest } from './auth/guards';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import NotMigrated from './pages/NotMigrated';
-
-// Screens are swapped in from ./pages/* as each work package lands (see docs/migration-plan.md).
-const HomePage = () => <NotMigrated screen="home" />;
-const AuthPage = ({ mode }: { mode: 'login' | 'register' }) => <NotMigrated screen={mode} />;
-const SettingsPage = () => <NotMigrated screen="settings" />;
-const ProfilePage = () => <NotMigrated screen="profile" />;
-const ProfileArticles = () => null;
-const ProfileFavorites = () => null;
-const EditorPage = () => <NotMigrated screen="editor" />;
-const ArticlePage = () => <NotMigrated screen="article" />;
+import ArticlePage from './pages/ArticlePage';
+import AuthPage from './pages/AuthPage';
+import EditorPage from './pages/EditorPage';
+import HomePage from './pages/HomePage';
+import ProfileArticles from './pages/profile/ProfileArticles';
+import ProfileFavorites from './pages/profile/ProfileFavorites';
+import ProfilePage from './pages/profile/ProfilePage';
+import SettingsPage from './pages/SettingsPage';
 
 /** Same routes and URLs as src/app/app.routes.ts and features/profile/profile.routes.ts. */
 export default function App() {
