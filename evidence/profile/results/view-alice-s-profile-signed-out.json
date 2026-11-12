@@ -1,0 +1,165 @@
+{
+  "screen": "profile",
+  "journey": "view alice's profile signed out",
+  "journeyId": "view-alice-s-profile-signed-out",
+  "ranAt": "2026-11-12T17:19:41.102Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "alice-profile-signed-out",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/view-alice-s-profile-signed-out--alice-profile-signed-out--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/screens/view-alice-s-profile-signed-out--alice-profile-signed-out--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/diffs/view-alice-s-profile-signed-out--alice-profile-signed-out--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "author": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "alice.url": "/profile/alice",
+      "alice.username": "alice",
+      "alice.bio": "Frontend engineer. Writes about forms and state.",
+      "alice.image": "http://localhost:3000/avatars/alice.svg",
+      "alice.actionButtons": ["   Follow alice"],
+      "alice.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "alice.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "alice.emptyMessage": [],
+      "alice.pages": ["1"],
+      "backend.profile": {
+        "profile": {
+          "username": "alice",
+          "bio": "Frontend engineer. Writes about forms and state.",
+          "image": "http://localhost:3000/avatars/alice.svg",
+          "following": false
+        }
+      },
+      "backend.articleCount": 5
+    },
+    "react": {
+      "alice.url": "/profile/alice",
+      "alice.username": "alice",
+      "alice.bio": "Frontend engineer. Writes about forms and state.",
+      "alice.image": "http://localhost:3000/avatars/alice.svg",
+      "alice.actionButtons": ["   Follow alice"],
+      "alice.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": true
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": false
+        }
+      ],
+      "alice.articleTitles": [
+        "State that survives a refresh",
+        "Migrating a screen at a time",
+        "Markdown in the browser",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "alice.emptyMessage": [],
+      "alice.pages": ["1"],
+      "backend.profile": {
+        "profile": {
+          "username": "alice",
+          "bio": "Frontend engineer. Writes about forms and state.",
+          "image": "http://localhost:3000/avatars/alice.svg",
+          "following": false
+        }
+      },
+      "backend.articleCount": 5
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile/video/view-alice-s-profile-signed-out--react.webm"
+}
