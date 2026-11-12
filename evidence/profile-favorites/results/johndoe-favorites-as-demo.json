@@ -1,0 +1,151 @@
+{
+  "screen": "profile-favorites",
+  "journey": "johndoe favorites as demo",
+  "journeyId": "johndoe-favorites-as-demo",
+  "ranAt": "2026-11-12T17:51:14.539Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "johndoe-favorites",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/johndoe-favorites-as-demo--johndoe-favorites--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/johndoe-favorites-as-demo--johndoe-favorites--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/diffs/johndoe-favorites-as-demo--johndoe-favorites--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1082],
+        "react": [1440, 1082]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/johndoe",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/johndoe",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "johndoe",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/johndoe",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/johndoe",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "johndoe",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "johndoe.url": "/profile/johndoe/favorites",
+      "johndoe.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/johndoe",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/johndoe/favorites",
+          "active": true
+        }
+      ],
+      "johndoe.articleTitles": [
+        "Migrating a screen at a time",
+        "Writing test cases people can run",
+        "Component boundaries that last"
+      ],
+      "johndoe.emptyMessage": [],
+      "johndoe.pages": ["1"],
+      "backend.favoritedCount": 3
+    },
+    "react": {
+      "johndoe.url": "/profile/johndoe/favorites",
+      "johndoe.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/johndoe",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/johndoe/favorites",
+          "active": true
+        }
+      ],
+      "johndoe.articleTitles": [
+        "Migrating a screen at a time",
+        "Writing test cases people can run",
+        "Component boundaries that last"
+      ],
+      "johndoe.emptyMessage": [],
+      "johndoe.pages": ["1"],
+      "backend.favoritedCount": 3
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/video/johndoe-favorites-as-demo--react.webm"
+}
