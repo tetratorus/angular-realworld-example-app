@@ -1,0 +1,4 @@
+/* Component-scoped styles carried over from Angular components. */
+.page-link {
+  cursor: pointer;
+}
