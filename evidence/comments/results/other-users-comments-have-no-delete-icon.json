@@ -1,0 +1,151 @@
+{
+  "screen": "comments",
+  "journey": "other users comments have no delete icon",
+  "journeyId": "other-users-comments-have-no-delete-icon",
+  "ranAt": "2026-11-12T17:21:21.037Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "signed-in-as-bob",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/screens/other-users-comments-have-no-delete-icon--signed-in-as-bob--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/diffs/other-users-comments-have-no-delete-icon--signed-in-as-bob--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1425],
+        "react": [1440, 1425]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "comments on screen": [
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": true
+        }
+      ],
+      "delete icon count": 1,
+      "author link hrefs": [
+        "/profile/demo",
+        "/profile/demo",
+        "/profile/carol",
+        "/profile/carol",
+        "/profile/bob",
+        "/profile/bob"
+      ]
+    },
+    "react": {
+      "comments on screen": [
+        {
+          "body": "Bookmarking this for the team.",
+          "author": "demo",
+          "authorHref": "/profile/demo",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "The validation section helped a lot.",
+          "author": "carol",
+          "authorHref": "/profile/carol",
+          "date": "October 1, 2026",
+          "hasDelete": false
+        },
+        {
+          "body": "Clear and practical, thanks.",
+          "author": "bob",
+          "authorHref": "/profile/bob",
+          "date": "October 1, 2026",
+          "hasDelete": true
+        }
+      ],
+      "delete icon count": 1,
+      "author link hrefs": [
+        "/profile/demo",
+        "/profile/demo",
+        "/profile/carol",
+        "/profile/carol",
+        "/profile/bob",
+        "/profile/bob"
+      ]
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/comments/video/other-users-comments-have-no-delete-icon--react.webm"
+}
