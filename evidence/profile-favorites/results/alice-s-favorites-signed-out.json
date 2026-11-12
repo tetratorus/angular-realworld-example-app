@@ -1,0 +1,139 @@
+{
+  "screen": "profile-favorites",
+  "journey": "alice's favorites signed out",
+  "journeyId": "alice-s-favorites-signed-out",
+  "ranAt": "2026-11-12T17:51:07.041Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "alice-favorites-signed-out",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/alice-s-favorites-signed-out--alice-favorites-signed-out--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/alice-s-favorites-signed-out--alice-favorites-signed-out--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/diffs/alice-s-favorites-signed-out--alice-favorites-signed-out--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1300],
+        "react": [1440, 1300]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/alice",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "alice",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "alice.url": "/profile/alice/favorites",
+      "alice.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": true
+        }
+      ],
+      "alice.articleTitles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "Designing an empty state",
+        "Why we run every test in CI"
+      ],
+      "alice.emptyMessage": [],
+      "alice.pages": ["1"],
+      "backend.favoritedCount": 4
+    },
+    "react": {
+      "alice.url": "/profile/alice/favorites",
+      "alice.tabs": [
+        {
+          "text": "My Posts",
+          "href": "/profile/alice",
+          "active": false
+        },
+        {
+          "text": "Favorited Posts",
+          "href": "/profile/alice/favorites",
+          "active": true
+        }
+      ],
+      "alice.articleTitles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "Designing an empty state",
+        "Why we run every test in CI"
+      ],
+      "alice.emptyMessage": [],
+      "alice.pages": ["1"],
+      "backend.favoritedCount": 4
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/video/alice-s-favorites-signed-out--react.webm"
+}
