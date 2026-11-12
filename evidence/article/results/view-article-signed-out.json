@@ -1,0 +1,129 @@
+{
+  "screen": "article",
+  "journey": "view article signed out",
+  "journeyId": "view-article-signed-out",
+  "ranAt": "2026-11-12T17:20:55.846Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "article-signed-out",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/view-article-signed-out--article-signed-out--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/view-article-signed-out--article-signed-out--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/view-article-signed-out--article-signed-out--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1274],
+        "react": [1440, 1274]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "signedOut.url": "/article/getting-started-with-reactive-forms",
+      "signedOut.title": ["Getting started with reactive forms"],
+      "signedOut.bannerMeta": ["alice October 1, 2026 Follow alice Favorite Article (3)"],
+      "signedOut.actionsMeta": ["alice October 1, 2026 Follow alice Favorite Article (3)"],
+      "signedOut.bannerButtons": ["Follow alice", "Favorite Article (3)"],
+      "signedOut.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "body.headings": ["Getting started with reactive forms"],
+      "body.paragraphs": [
+        "A short tour of form state, validation and submission.",
+        "This article is part of the seeded demo data. It has bold text, a list and a link:",
+        "Read more on the RealWorld project."
+      ],
+      "body.listItems": ["First point about forms", "Second point about angular"],
+      "body.bold": ["bold text"],
+      "body.links": ["https://github.com/realworld-apps/realworld"],
+      "tags": ["forms", "angular"],
+      "authorLinks": ["/profile/alice", "/profile/alice"],
+      "backend.article": {
+        "title": "Getting started with reactive forms",
+        "tagList": ["forms", "angular"],
+        "favoritesCount": 3
+      },
+      "signedOut.favoriteClick.url": "/register"
+    },
+    "react": {
+      "signedOut.url": "/article/getting-started-with-reactive-forms",
+      "signedOut.title": ["Getting started with reactive forms"],
+      "signedOut.bannerMeta": ["alice October 1, 2026 Follow alice Favorite Article (3)"],
+      "signedOut.actionsMeta": ["alice October 1, 2026 Follow alice Favorite Article (3)"],
+      "signedOut.bannerButtons": ["Follow alice", "Favorite Article (3)"],
+      "signedOut.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "body.headings": ["Getting started with reactive forms"],
+      "body.paragraphs": [
+        "A short tour of form state, validation and submission.",
+        "This article is part of the seeded demo data. It has bold text, a list and a link:",
+        "Read more on the RealWorld project."
+      ],
+      "body.listItems": ["First point about forms", "Second point about angular"],
+      "body.bold": ["bold text"],
+      "body.links": ["https://github.com/realworld-apps/realworld"],
+      "tags": ["forms", "angular"],
+      "authorLinks": ["/profile/alice", "/profile/alice"],
+      "backend.article": {
+        "title": "Getting started with reactive forms",
+        "tagList": ["forms", "angular"],
+        "favoritesCount": 3
+      },
+      "signedOut.favoriteClick.url": "/register"
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/video/view-article-signed-out--react.webm"
+}

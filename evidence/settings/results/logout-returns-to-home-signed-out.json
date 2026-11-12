@@ -1,0 +1,86 @@
+{
+  "screen": "settings",
+  "journey": "logout returns to home signed out",
+  "journeyId": "logout-returns-to-home-signed-out",
+  "ranAt": "2026-11-12T17:21:29.302Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": false,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "settings-before-logout",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/logout-returns-to-home-signed-out--settings-before-logout--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/logout-returns-to-home-signed-out--settings-before-logout--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/diffs/logout-returns-to-home-signed-out--settings-before-logout--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "navLinksBefore": ["Home", " New Article", " Settings", "demo"],
+      "urlAfterLogout": "/",
+      "navLinksAfter": ["Home", "Sign in", "Sign up"],
+      "storedToken": null,
+      "tokenStillValidOnBackend": true
+    },
+    "react": {
+      "navLinksBefore": ["Home", " New Article", " Settings", "demo"],
+      "urlAfterLogout": "/",
+      "navLinksAfter": ["Home", "Sign in", "Sign up"],
+      "storedToken": null,
+      "tokenStillValidOnBackend": true
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/video/logout-returns-to-home-signed-out--react.webm"
+}

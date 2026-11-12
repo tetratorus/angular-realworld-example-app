@@ -3,15 +3,18 @@
   cursor: pointer;
 }
 
-/* The theme's sticky footer targets Angular's <app-root>; same rules for React's #root. */
+/* Sticky footer: the theme's rules target Angular's <app-root>; same rules for React's #root. */
 #root {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
+
 #root > *:not(footer) {
   flex-shrink: 0;
 }
-#root > footer {
-  margin-top: auto;
+
+/* Angular puts margin-top: auto on the <app-layout-footer> wrapper, so <footer> keeps its own 42px margin. */
+#root > :nth-last-child(2) {
+  margin-bottom: auto;
 }
