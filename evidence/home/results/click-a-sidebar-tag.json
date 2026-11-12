@@ -1,0 +1,358 @@
+{
+  "screen": "home",
+  "journey": "click a sidebar tag",
+  "journeyId": "click-a-sidebar-tag",
+  "ranAt": "2026-11-12T17:20:06.369Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "tag-testing",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/click-a-sidebar-tag--tag-testing--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/click-a-sidebar-tag--tag-testing--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/click-a-sidebar-tag--tag-testing--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1418],
+        "react": [1440, 1418]
+      },
+      "pass": true
+    },
+    {
+      "name": "back-to-global-feed",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/click-a-sidebar-tag--back-to-global-feed--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/screens/click-a-sidebar-tag--back-to-global-feed--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/diffs/click-a-sidebar-tag--back-to-global-feed--diff.png",
+      "pct": 0.019807483089730855,
+      "differing": 670,
+      "size": {
+        "angular": [1440, 2349],
+        "react": [1440, 2349]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "testing"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0",
+          "tag": "testing"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "tag.url": "/tag/testing",
+      "tag.bannerVisible": true,
+      "tag.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "testing",
+          "active": true
+        }
+      ],
+      "tag.titles": [
+        "Screenshots as evidence",
+        "Negative tests matter",
+        "Regression suites that stay green",
+        "Writing test cases people can run",
+        "Why we run every test in CI"
+      ],
+      "tag.emptyMessage": [],
+      "tag.pages": ["1"],
+      "tag.activePage": ["1"],
+      "tag.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag.sidebarMessages": [],
+      "backend.tagTitles": [
+        "Screenshots as evidence",
+        "Negative tests matter",
+        "Regression suites that stay green",
+        "Writing test cases people can run",
+        "Why we run every test in CI"
+      ],
+      "global.url": "/",
+      "global.bannerVisible": true,
+      "global.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": []
+    },
+    "react": {
+      "tag.url": "/tag/testing",
+      "tag.bannerVisible": true,
+      "tag.tabs": [
+        {
+          "text": "Global Feed",
+          "active": false
+        },
+        {
+          "text": "testing",
+          "active": true
+        }
+      ],
+      "tag.titles": [
+        "Screenshots as evidence",
+        "Negative tests matter",
+        "Regression suites that stay green",
+        "Writing test cases people can run",
+        "Why we run every test in CI"
+      ],
+      "tag.emptyMessage": [],
+      "tag.pages": ["1"],
+      "tag.activePage": ["1"],
+      "tag.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "tag.sidebarMessages": [],
+      "backend.tagTitles": [
+        "Screenshots as evidence",
+        "Negative tests matter",
+        "Regression suites that stay green",
+        "Writing test cases people can run",
+        "Why we run every test in CI"
+      ],
+      "global.url": "/",
+      "global.bannerVisible": true,
+      "global.tabs": [
+        {
+          "text": "Global Feed",
+          "active": true
+        }
+      ],
+      "global.titles": [
+        "Screenshots as evidence",
+        "Welcome to Conduit",
+        "State that survives a refresh",
+        "Error messages that help",
+        "Settings pages people understand",
+        "Negative tests matter",
+        "Favourites as a signal",
+        "Migrating a screen at a time",
+        "Following and feeds",
+        "Typography for long reads"
+      ],
+      "global.emptyMessage": [],
+      "global.pages": ["1", "2", "3"],
+      "global.activePage": ["1"],
+      "global.tags": [
+        "testing",
+        "migration",
+        "welcome",
+        "routing",
+        "state",
+        "ux",
+        "forms",
+        "design",
+        "qa",
+        "api",
+        "social",
+        "angular",
+        "ci",
+        "writing",
+        "markdown",
+        "security",
+        "auth",
+        "accessibility",
+        "pagination",
+        "components"
+      ],
+      "global.sidebarMessages": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/click-a-sidebar-tag--react.webm"
+}

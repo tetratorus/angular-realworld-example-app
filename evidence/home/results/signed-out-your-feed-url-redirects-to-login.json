@@ -1,0 +1,69 @@
+{
+  "screen": "home",
+  "journey": "signed-out your feed url redirects to login",
+  "journeyId": "signed-out-your-feed-url-redirects-to-login",
+  "ranAt": "2026-11-12T17:20:16.944Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/tags",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/login",
+      "yourFeedTabCount": 0
+    },
+    "react": {
+      "url": "/login",
+      "yourFeedTabCount": 0
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/home/video/signed-out-your-feed-url-redirects-to-login--react.webm"
+}
