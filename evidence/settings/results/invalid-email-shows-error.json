@@ -1,0 +1,109 @@
+{
+  "screen": "settings",
+  "journey": "invalid email shows error",
+  "journeyId": "invalid-email-shows-error",
+  "ranAt": "2026-11-12T17:21:21.756Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "invalid-email-error",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/invalid-email-shows-error--invalid-email-error--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/screens/invalid-email-shows-error--invalid-email-error--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/diffs/invalid-email-shows-error--invalid-email-error--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "PUT",
+        "path": "/user",
+        "query": {},
+        "body": {
+          "user": {
+            "image": "",
+            "username": "demo",
+            "bio": "Demo account used by the test scenarios.",
+            "email": "not-an-email"
+          }
+        },
+        "status": 422
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "PUT",
+        "path": "/user",
+        "query": {},
+        "body": {
+          "user": {
+            "image": "",
+            "username": "demo",
+            "bio": "Demo account used by the test scenarios.",
+            "email": "not-an-email"
+          }
+        },
+        "status": 422
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "url": "/settings",
+      "errors": ["email is invalid"],
+      "formValues": {
+        "image": "",
+        "username": "demo",
+        "bio": "Demo account used by the test scenarios.",
+        "email": "not-an-email",
+        "password": ""
+      },
+      "formEnabledAgain": true,
+      "backendEmail": "demo@conduit.test"
+    },
+    "react": {
+      "url": "/settings",
+      "errors": ["email is invalid"],
+      "formValues": {
+        "image": "",
+        "username": "demo",
+        "bio": "Demo account used by the test scenarios.",
+        "email": "not-an-email",
+        "password": ""
+      },
+      "formEnabledAgain": true,
+      "backendEmail": "demo@conduit.test"
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/settings/video/invalid-email-shows-error--react.webm"
+}
