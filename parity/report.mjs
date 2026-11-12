@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Builds evidence/<screen>/report.md from evidence/<screen>/results/*.json, plus evidence/parity-results.md.
+// `node parity/report.mjs <screen>...` rebuilds only those screens' reports and leaves parity-results.md alone.
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, relative, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,11 +8,12 @@ import { fileURLToPath } from 'node:url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const EV = join(ROOT, 'evidence');
 const mark = ok => (ok ? 'PASS' : 'FAIL');
+const only = process.argv.slice(2);
 const rows = [];
 
 for (const screen of readdirSync(EV, { withFileTypes: true }).filter(d => d.isDirectory()).map(d => d.name).sort()) {
   const resDir = join(EV, screen, 'results');
-  if (!existsSync(resDir)) continue;
+  if (!existsSync(resDir) || (only.length && !only.includes(screen))) continue;
   const dir = join(EV, screen);
   const rel = p => (p ? relative(dir, p) : '');
   const results = readdirSync(resDir).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(resDir, f), 'utf8')));
@@ -50,5 +52,5 @@ for (const screen of readdirSync(EV, { withFileTypes: true }).filter(d => d.isDi
 let all = `# Parity results (all screens)\n\n| Screen | Journey | Max diff | Result | Ran at |\n|---|---|---|---|---|\n`;
 for (const r of rows) all += `| ${r.screen} | ${r.journey} | ${r.max.toFixed(3)}% | ${mark(r.ok)} | ${r.ranAt} |\n`;
 all += `\n**${rows.filter(r => r.ok).length} / ${rows.length} journeys pass all checks.**\n`;
-writeFileSync(join(EV, 'parity-results.md'), all);
+if (!only.length) writeFileSync(join(EV, 'parity-results.md'), all);
 console.log(all);

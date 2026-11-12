@@ -29,7 +29,9 @@ for tid, *_ in S:
     if not r: continue
     m = manual.get(tid, {})
     method = m.get("method", "Playwright (headed, video, screenshot per step)")
-    results[tid] = {"actual": r["actual"], "status": r["status"],
+    status = r["status"] if m.get("status", r["status"]) == r["status"] else "Fail"
+    actual = (m["actual"] + "\nPlaywright re-run: " + r["actual"]) if m.get("actual") else r["actual"]
+    results[tid] = {"actual": actual, "status": status,
                     "evidence": f"Method: {method}\n" + evidence(r, m.get("evidence", "")) + f"\nRun: {r['ranAt']}"}
 
 out = os.path.join(HERE, "uat-scenarios-executed.xlsx")
