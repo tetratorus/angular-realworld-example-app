@@ -2,12 +2,12 @@
   "screen": "editor",
   "journey": "edit own article as alice",
   "journeyId": "edit-own-article-as-alice",
-  "ranAt": "2026-11-12T17:22:11.339Z",
+  "ranAt": "2026-11-12T17:23:08.216Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
     "visual": true,
-    "apiCalls": false,
+    "apiCalls": true,
     "observations": true
   },
   "errors": {
@@ -130,6 +130,20 @@
             "slug": "getting-started-with-reactive-forms"
           }
         },
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/getting-started-with-reactive-forms/comments",
+        "query": {},
+        "body": null,
         "status": 200
       }
     ]

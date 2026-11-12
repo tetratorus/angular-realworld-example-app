@@ -2,7 +2,7 @@
   "screen": "editor",
   "journey": "signed out editor redirects to login",
   "journeyId": "signed-out-editor-redirects-to-login",
-  "ranAt": "2026-11-12T17:22:17.885Z",
+  "ranAt": "2026-11-12T17:23:13.958Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,

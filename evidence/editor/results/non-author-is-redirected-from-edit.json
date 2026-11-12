@@ -2,7 +2,7 @@
   "screen": "editor",
   "journey": "non-author is redirected from edit",
   "journeyId": "non-author-is-redirected-from-edit",
-  "ranAt": "2026-11-12T17:22:15.716Z",
+  "ranAt": "2026-11-12T17:23:11.809Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
@@ -20,11 +20,11 @@
       "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/non-author-is-redirected-from-edit--redirected-to-home--angular.png",
       "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/non-author-is-redirected-from-edit--redirected-to-home--react.png",
       "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/diffs/non-author-is-redirected-from-edit--redirected-to-home--diff.png",
-      "pct": 0.5833719672384484,
-      "differing": 18120,
+      "pct": 0,
+      "differing": 0,
       "size": {
         "angular": [1440, 2157],
-        "react": [1440, 2115]
+        "react": [1440, 2157]
       },
       "pass": true
     }

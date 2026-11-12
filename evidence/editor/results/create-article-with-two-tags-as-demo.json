@@ -2,12 +2,12 @@
   "screen": "editor",
   "journey": "create article with two tags as demo",
   "journeyId": "create-article-with-two-tags-as-demo",
-  "ranAt": "2026-11-12T17:22:03.220Z",
+  "ranAt": "2026-11-12T17:23:00.822Z",
   "checks": {
     "noErrors": true,
     "sameScreens": true,
     "visual": true,
-    "apiCalls": false,
+    "apiCalls": true,
     "observations": true
   },
   "errors": {
@@ -114,6 +114,20 @@
           }
         },
         "status": 201
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/parity-check-from-the-editor/comments",
+        "query": {},
+        "body": null,
+        "status": 200
       }
     ]
   },
