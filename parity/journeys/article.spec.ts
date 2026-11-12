@@ -120,6 +120,12 @@ parityJourney('article', 'delete own article redirects home', async ctx => {
   await page.locator('.banner button', { hasText: 'Delete Article' }).click();
   await page.waitForURL(`${baseURL}/`);
   observe('afterDelete.url', page.url().replace(baseURL, ''));
+  await page.locator('.article-preview').first().waitFor();
+  await snap('home after delete');
+  observe(
+    'afterDelete.homeHasDeletedArticle',
+    (await text(ctx, '.article-preview h1')).includes('Markdown in the browser'),
+  );
   observe('backend.articleAfterDelete', await api(`/articles/${ALICE_TO_DELETE}`, token));
   const list = await api('/articles?author=alice&limit=50', token);
   observe(

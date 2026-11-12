@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { articlesApi } from '../api/client';
 import type { Article, Errors, Profile } from '../api/types';
@@ -10,7 +10,7 @@ import FollowButton from '../components/FollowButton';
 import ListErrors from '../components/ListErrors';
 import { renderMarkdown } from '../lib/markdown';
 
-/** Port of features/article/pages/article/article.component (comments section lives in ArticleComments). */
+/** Port of features/article/pages/article/article.component; the comments `.row` is rendered by ArticleComments. */
 export default function ArticlePage() {
   const { slug = '' } = useParams();
   const navigate = useNavigate();
@@ -18,19 +18,18 @@ export default function ArticlePage() {
   const [article, setArticle] = useState<Article | null>(null);
   const [errors, setErrors] = useState<Errors | null>(null);
   const [isDeleting, setDeleting] = useState(false);
-  const loadedSlug = useRef<string | null>(null);
 
   useEffect(() => {
-    // Guarded by slug rather than cancelled on cleanup, so StrictMode's double effect issues one request.
-    if (loadedSlug.current === slug) return;
-    loadedSlug.current = slug;
+    let cancelled = false;
     articlesApi.get(slug).then(
-      a => loadedSlug.current === slug && setArticle(a),
+      a => !cancelled && setArticle(a),
       // Angular stores err.errors (the inner map) and hands it to <app-list-errors>, which reads `.errors` again.
       (err: Errors) =>
-        loadedSlug.current === slug &&
-        setErrors((err.errors || { error: ['Failed to load article'] }) as unknown as Errors),
+        !cancelled && setErrors((err.errors || { error: ['Failed to load article'] }) as unknown as Errors),
     );
+    return () => {
+      cancelled = true;
+    };
   }, [slug]);
 
   const canModify = !!article && currentUser?.username === article.author.username;
@@ -111,11 +110,7 @@ export default function ArticlePage() {
               <ArticleMeta article={article}>{actions(article)}</ArticleMeta>
             </div>
 
-            <div className="row">
-              <div className="col-xs-12 col-md-8 offset-md-2">
-                <ArticleComments article={article} />
-              </div>
-            </div>
+            <ArticleComments article={article} />
           </div>
         </>
       )}

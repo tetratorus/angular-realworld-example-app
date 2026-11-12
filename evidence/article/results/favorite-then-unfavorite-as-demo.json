@@ -1,0 +1,223 @@
+{
+  "screen": "article",
+  "journey": "favorite then unfavorite as demo",
+  "journeyId": "favorite-then-unfavorite-as-demo",
+  "ranAt": "2026-11-12T17:21:00.689Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "before-favorite",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--before-favorite--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--before-favorite--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/favorite-then-unfavorite-as-demo--before-favorite--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1049],
+        "react": [1440, 1049]
+      },
+      "pass": true
+    },
+    {
+      "name": "favorited",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--favorited--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--favorited--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/favorite-then-unfavorite-as-demo--favorited--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1049],
+        "react": [1440, 1049]
+      },
+      "pass": true
+    },
+    {
+      "name": "unfavorited",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--unfavorited--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/screens/favorite-then-unfavorite-as-demo--unfavorited--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/diffs/favorite-then-unfavorite-as-demo--unfavorited--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1049],
+        "react": [1440, 1049]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/designing-an-empty-state/favorite",
+        "query": {},
+        "body": {},
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/designing-an-empty-state/favorite",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles/designing-an-empty-state/comments",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles/designing-an-empty-state/favorite",
+        "query": {},
+        "body": {},
+        "status": 200
+      },
+      {
+        "method": "DELETE",
+        "path": "/articles/designing-an-empty-state/favorite",
+        "query": {},
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "before.url": "/article/designing-an-empty-state",
+      "before.title": ["Designing an empty state"],
+      "before.bannerMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "before.actionsMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "before.bannerButtons": ["Follow carol", "Favorite Article (1)"],
+      "before.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "favorited.url": "/article/designing-an-empty-state",
+      "favorited.title": ["Designing an empty state"],
+      "favorited.bannerMeta": ["carol October 3, 2026 Follow carol Unfavorite Article (2)"],
+      "favorited.actionsMeta": ["carol October 3, 2026 Follow carol Unfavorite Article (2)"],
+      "favorited.bannerButtons": ["Follow carol", "Unfavorite Article (2)"],
+      "favorited.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-primary"
+      ],
+      "backend.favorited": {
+        "favorited": true,
+        "favoritesCount": 2
+      },
+      "unfavorited.url": "/article/designing-an-empty-state",
+      "unfavorited.title": ["Designing an empty state"],
+      "unfavorited.bannerMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "unfavorited.actionsMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "unfavorited.bannerButtons": ["Follow carol", "Favorite Article (1)"],
+      "unfavorited.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "backend.unfavorited": {
+        "favorited": false,
+        "favoritesCount": 1
+      }
+    },
+    "react": {
+      "before.url": "/article/designing-an-empty-state",
+      "before.title": ["Designing an empty state"],
+      "before.bannerMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "before.actionsMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "before.bannerButtons": ["Follow carol", "Favorite Article (1)"],
+      "before.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "favorited.url": "/article/designing-an-empty-state",
+      "favorited.title": ["Designing an empty state"],
+      "favorited.bannerMeta": ["carol October 3, 2026 Follow carol Unfavorite Article (2)"],
+      "favorited.actionsMeta": ["carol October 3, 2026 Follow carol Unfavorite Article (2)"],
+      "favorited.bannerButtons": ["Follow carol", "Unfavorite Article (2)"],
+      "favorited.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-primary"
+      ],
+      "backend.favorited": {
+        "favorited": true,
+        "favoritesCount": 2
+      },
+      "unfavorited.url": "/article/designing-an-empty-state",
+      "unfavorited.title": ["Designing an empty state"],
+      "unfavorited.bannerMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "unfavorited.actionsMeta": ["carol October 3, 2026 Follow carol Favorite Article (1)"],
+      "unfavorited.bannerButtons": ["Follow carol", "Favorite Article (1)"],
+      "unfavorited.buttonClasses": [
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary",
+        "btn btn-sm action-btn btn-outline-secondary",
+        "btn btn-sm btn-outline-primary"
+      ],
+      "backend.unfavorited": {
+        "favorited": false,
+        "favoritesCount": 1
+      }
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/article/video/favorite-then-unfavorite-as-demo--react.webm"
+}
