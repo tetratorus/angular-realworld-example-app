@@ -1,0 +1,33 @@
+{
+  "screen": "editor",
+  "journey": "signed out editor redirects to login",
+  "journeyId": "signed-out-editor-redirects-to-login",
+  "ranAt": "2026-11-12T17:22:17.885Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [],
+  "apiCalls": {
+    "angular": [],
+    "react": []
+  },
+  "observations": {
+    "angular": {
+      "url after redirect": "/login",
+      "editor present": 0
+    },
+    "react": {
+      "url after redirect": "/login",
+      "editor present": 0
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/video/signed-out-editor-redirects-to-login--react.webm"
+}

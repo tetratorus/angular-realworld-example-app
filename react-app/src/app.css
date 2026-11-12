@@ -2,3 +2,16 @@
 .page-link {
   cursor: pointer;
 }
+
+/* The theme's sticky footer targets Angular's <app-root>; same rules for React's #root. */
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#root > *:not(footer) {
+  flex-shrink: 0;
+}
+#root > footer {
+  margin-top: auto;
+}

@@ -1,0 +1,107 @@
+{
+  "screen": "editor",
+  "journey": "blank title shows error",
+  "journeyId": "blank-title-shows-error",
+  "ranAt": "2026-11-12T17:22:07.154Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "blank-title-error",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/blank-title-shows-error--blank-title-error--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/screens/blank-title-shows-error--blank-title-error--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/diffs/blank-title-shows-error--blank-title-error--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 900],
+        "react": [1440, 900]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles",
+        "query": {},
+        "body": {
+          "article": {
+            "title": "",
+            "description": "No title given",
+            "body": "Body without a title.",
+            "tagList": []
+          }
+        },
+        "status": 422
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "POST",
+        "path": "/articles",
+        "query": {},
+        "body": {
+          "article": {
+            "title": "",
+            "description": "No title given",
+            "body": "Body without a title.",
+            "tagList": []
+          }
+        },
+        "status": 422
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "form after error": {
+        "title": "",
+        "description": "No title given",
+        "body": "Body without a title.",
+        "tagInput": "",
+        "tags": [],
+        "errors": ["title can't be blank"]
+      },
+      "url after error": "/editor",
+      "demo articles count": 0
+    },
+    "react": {
+      "form after error": {
+        "title": "",
+        "description": "No title given",
+        "body": "Body without a title.",
+        "tagInput": "",
+        "tags": [],
+        "errors": ["title can't be blank"]
+      },
+      "url after error": "/editor",
+      "demo articles count": 0
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/editor/video/blank-title-shows-error--react.webm"
+}
