@@ -1,0 +1,127 @@
+{
+  "screen": "profile-favorites",
+  "journey": "own favorites as demo",
+  "journeyId": "own-favorites-as-demo",
+  "ranAt": "2026-11-13T01:11:27.575Z",
+  "checks": {
+    "noErrors": true,
+    "sameScreens": true,
+    "visual": true,
+    "apiCalls": true,
+    "observations": true
+  },
+  "errors": {
+    "angular": null,
+    "react": null
+  },
+  "shots": [
+    {
+      "name": "demo-favorites-as-demo",
+      "angular": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/own-favorites-as-demo--demo-favorites-as-demo--angular.png",
+      "react": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/screens/own-favorites-as-demo--demo-favorites-as-demo--react.png",
+      "diff": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/diffs/own-favorites-as-demo--demo-favorites-as-demo--diff.png",
+      "pct": 0,
+      "differing": 0,
+      "size": {
+        "angular": [1440, 1486],
+        "react": [1440, 1486]
+      },
+      "pass": true
+    }
+  ],
+  "apiCalls": {
+    "angular": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ],
+    "react": [
+      {
+        "method": "GET",
+        "path": "/user",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/profiles/demo",
+        "query": {},
+        "body": null,
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/articles",
+        "query": {
+          "favorited": "demo",
+          "limit": "10",
+          "offset": "0"
+        },
+        "body": null,
+        "status": 200
+      }
+    ]
+  },
+  "observations": {
+    "angular": {
+      "demo.url": "/profile/demo/favorites",
+      "demo.articleTitles": [
+        "Screenshots as evidence",
+        "Migrating a screen at a time",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "demo.emptyMessage": []
+    },
+    "react": {
+      "demo.url": "/profile/demo/favorites",
+      "demo.articleTitles": [
+        "Screenshots as evidence",
+        "Migrating a screen at a time",
+        "Writing test cases people can run",
+        "Component boundaries that last",
+        "Getting started with reactive forms"
+      ],
+      "demo.emptyMessage": []
+    }
+  },
+  "video": "/home/ubuntu/repos/angular-realworld-example-app/evidence/profile-favorites/video/own-favorites-as-demo--react.webm"
+}
